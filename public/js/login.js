@@ -1,7 +1,6 @@
 // Signup Function
 async function signupValidation(event) {
-    //event.preventDefault(); // Prevent form submission
-
+    
     const name = document.getElementById("signup-name").value.trim();
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-password").value.trim();
@@ -11,12 +10,15 @@ async function signupValidation(event) {
     const gender = document.querySelector('input[name="gender"]:checked');
 
 
-    // Validate email (Gmail only)
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-    if (!emailPattern.test(email)) {
-        alert("Please enter a valid Gmail address.");
-        return false;
-    }
+    const allowedProviders = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"];
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9.-]+)$/;
+
+const match = email.match(emailPattern);
+if (!match || !allowedProviders.includes(match[1])) {
+    alert("Please enter an email from the allowed providers: Gmail, Yahoo, Outlook, Hotmail.");
+    return false;
+}
+
 
     // validate Password 
     const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
@@ -32,9 +34,9 @@ async function signupValidation(event) {
     }
 
     // Validate phone number (10 digits)
-    const phonePattern = /^\d{10}$/;
-    if (!phonePattern.test(phone)) {
-        alert("Please enter a valid 10-digit mobile number.");
+    const phonePattern = /^\d{11}$/;
+    if (!phonePattern.test(mobile)) {
+        alert("Please enter a valid 11-digit mobile number.");
         return false;
     }
 
