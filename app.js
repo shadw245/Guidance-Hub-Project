@@ -101,8 +101,44 @@ app.get("/Marketing", (req, res) => {
 app.get("/mechanical", (req, res) => {
     res.render("mechanical");
 });
-app.get("/mentorships", (req, res) => {
-    res.render("mentorships");
+app.get("/mentorships", async (req, res) => {
+     try {
+    const mentorships = await Mentorship.find();
+
+    const subMajors = {
+      "Computer Science": [
+        "Software Development",
+        "Software Testing",
+        "Human-Computer Interaction (HCI)",
+        "Cyber Security",
+        "Information Systems",
+        "Data Science",
+        "Artificial Intelligence",
+        "Internet of Things (IOT)"
+      ],
+      "Engineering": [
+        "Electronics & Communication",
+        "Architecture",
+        "Chemicals",
+        "Mechanical",
+        "Agricultural"
+      ],
+      "Business": [
+        "Finance",
+        "Accounting",
+        "Marketing",
+        "Human Resource",
+        "Entrepreneurship",
+        "Supply Chain Management"
+      ]
+    };
+
+    res.render("mentorships", { mentorships, subMajors });
+
+  } catch (err) {
+    console.error("Failed to fetch mentorships:", err);
+    res.status(500).send("Server error");
+  }
 });
 
 app.get("/software-development", (req, res) => {
