@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Accounting starts here!</h2>
+        <h3>About Accounting</h3>
+        <p>Accounting involves the systematic recording, reporting, and analysis of financial transactions. It plays a crucial role in business operations, helping organizations track their financial performance and comply with regulations.</p>
+        <p>In this section, we will explore the fundamentals of accounting, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in accounting or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Accounting in business involves managing financial records, preparing financial statements, and ensuring compliance with financial regulations.</p>
+
+        <h3>What is Accounting?</h3>
+        <p>Accounting is the process of recording, classifying, and summarizing financial transactions to provide useful information for decision-making. It includes activities such as bookkeeping, financial reporting, budgeting, and tax compliance.</p>
+        <p>Understanding accounting is crucial for anyone looking to pursue a career in finance, management, or entrepreneurship. It helps in making informed decisions, managing resources effectively, and ensuring the financial health of an organization.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Financial Analysis:</b> Analyzing financial data to assess the company's performance and identify trends</li>
+            <li><b>Cost Management:</b> Monitoring and controlling costs to improve profitability</li>
+            <li><b>Bookkeeping:</b> Recording daily financial transactions such as sales, purchases, and expenses</li>
+            <li><b>Financial Reporting:</b> Preparing financial statements like balance sheets, income statements, and cash flow statements to provide insights into the company's financial health</li>
+            <li><b>Budgeting and Forecasting:</b> Creating budgets and financial forecasts to guide business planning and decision-making</li>
+            <li><b>Tax Compliance:</b> Ensuring the company complies with tax laws and regulations and preparing tax returns</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Accountant</h3><hr>
+                <div class="career-description">
+                    <p>Accountants are responsible for preparing and examining financial records, ensuring accuracy, and compliance with laws.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Management Accountant</h3><hr>
+                <div class="career-description">
+                    <p>Management accountants analyze financial data to help management make informed business decisions.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Forensic Accountant</h3><hr>
+                <div class="career-description">
+                    <p>Forensic accountants investigate financial discrepancies and fraud, often working with law enforcement.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Tax Advisor</h3><hr>
+                <div class="career-description">
+                    <p>Tax advisors provide guidance on tax planning and compliance, helping individuals and businesses minimize tax liabilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+
+<%- include('partials/footer') %>
+</footer>
+</body>
+</html>

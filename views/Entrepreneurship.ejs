@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneurship</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career-paths</a>
+        <a href="#internship">Innternship</a>
+        <a href="#mentorship">Mentorship</a>
+      </div>
+
+    <!-- Description Section -->
+    <div class="description"id="description">
+
+        <h2>Your journey into the world of Entrepreneurship starts here !</h2>
+
+        <h3>About Entrepreneurship</h3>
+        <p>Entrepreneurship is the process of starting and running a new business, often characterized by innovation and risk-taking. It plays a vital role in driving economic growth and creating jobs.</p>
+        <p>In this section, we will explore the fundamentals of entrepreneurship, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in entrepreneurship or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Entrepreneurship in business involves creating and managing a new venture, often based on an innovative idea.</p>
+
+        <h3>What is Entrepreneurship Business ?</h3>
+        <p>Entrepreneurship is the process of designing, launching, and running a new business, typically a startup offering a product, service, or process. Entrepreneurs are individuals who create and/or invest in these businesses.</p>
+        <p>Entrepreneurship is a key driver of economic growth and innovation, as it leads to the creation of new jobs, products, and services.</p>
+        <p>It involves identifying a market need, developing a business plan, securing funding, and managing the operations of the business.</p>
+        <p>Entrepreneurship is the process of starting and running a new business, bearing most of the risks and enjoying most of the rewards. Entrepreneurs play a crucial role in the economy by bringing new ideas to market and driving innovation.</p>
+            
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Business Planning:</b> Entrepreneurs must create a comprehensive business plan that outlines their vision, goals, target market, and financial projections</li>
+            <li><b>Market Research:</b> Conducting thorough market research to understand customer needs, industry trends, and competitive landscape is essential for success</li>
+            <li><b>Innovation:</b> Entrepreneurs are responsible for bringing new ideas to life, whether it's developing new products, improving existing ones, or exploring new markets</li>
+            <li><b>Risk Management:</b> Taking calculated risks is a fundamental part of entrepreneurship. Entrepreneurs must navigate uncertainties, make strategic investments and adapt to market fluctuations</li>
+            <li><b>Building Strategic Partnerships:</b> Entrepreneurs often need to build and maintain strategic partnerships to enhance their business operations and expand their market reach</li>
+            <li><b>Leadership and Management:</b> Entrepreneurs must lead their teams, make key decisions, set a good example and resolve conflicts. Effective leadership is vital for motivating employees and driving the business forward</li>
+        </ul>
+    
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+        <div class="career-card">
+            <h3>Venture Capitalist or Investor</h3><hr>
+                    <div class="career-description">
+                        <p>Venture capitalists invest in startups and small businesses with high growth potential, providing funding and guidance to help them succeed.</p>
+                    </div>
+                </div>
+
+                <div class="career-card">
+                    <h3>Starting Your Own Business</h3><hr>
+                            <div class="career-description">
+                                <p>Management accountants analyze financial data to help management make informed business decisions.</p>
+                            </div>
+                        </div>
+                        <div class="career-card">
+                            <h3>Business Consultant</h3><hr>
+                                    <div class="career-description">
+                                        <p>Business consultants provide expert advice to organizations on various aspects of their operations, including strategy, management, and marketing.</p>
+                                    </div>
+                                </div>
+                                <div class="career-card">
+                                    <h3>Franchise Owner</h3><hr>
+                                            <div class="career-description">
+                                                <p>Franchise owners operate a business under the brand of an established company, benefiting from its reputation and support.</p>
+                                            </div>
+                                        </div>            
+        </div>
+    </div>
+
+     <!-- Internship Section -->
+     <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+     <!-- Mentorship Section -->
+     <div class="mentorship"id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openmentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+
+          <%- include('partials/footer') %>
+
+    
+</body>
+</html>

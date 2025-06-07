@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer science</title>
+    <link rel="stylesheet" href="/css/styling.css">
+    <script src="/js/javascript.js"></script>
+
+</head>
+<body>
+ <%- include('partials/nav') %>
+
+    <input type="text" id="searchBox" placeholder="Search Majors..." onkeyup="searchMajors()">
+
+    <div class="container">
+        <a href="Artificial-intelligence" class="major-box artificial-intelligence">
+            <span>Artificial intelligence</span>
+        </a>
+        <a href="cyber-security" class="major-box cyber-security">
+            <span>cyber security</span>
+        </a>
+        <a href="Data-Science" class="major-box data-science">
+            <span>Data science</span>
+        </a>
+        <a href="HCI" class="major-box hci">
+            <span>Human-computer interaction</span>
+        </a>
+        <a href="Information-Systems" class="major-box information-systems">
+            <span>Information Systems</span>
+        </a>
+        <a href="IOT" class="major-box iot">
+            <span>Internet of Things </span>
+        </a>
+        <a href="software-development" class="major-box software-development">
+            <span>software Development</span>
+        </a>
+        <a href="software-testing" class="major-box software-testing">
+            <span>software testing </span>
+        </a>   
+    </div>
+    <div class="chatbot" id="chatbot">💬</div>
+</body>
+</html>

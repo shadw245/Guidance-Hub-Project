@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Engineering</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+   
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Architectural Engineering starts here!</h2>
+        <h3>About Architectural Engineering</h3>
+        <p>Architectural Engineering involves the application of engineering principles to the design and construction of buildings. It plays a crucial role in ensuring the safety, functionality, and sustainability of built environments.</p>
+        <p>In this section, we will explore the fundamentals of architectural engineering, its importance in construction, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in architectural engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Architectural engineering in construction involves integrating engineering and architectural design to create efficient and aesthetically pleasing buildings.</p>
+
+        <h3>What is Architectural Engineering?</h3>
+        <p>Architectural Engineering is the discipline that focuses on the technical aspects of building design and construction. It includes activities such as structural engineering, building systems design, and construction management.</p>
+        <p>Understanding architectural engineering is crucial for anyone looking to pursue a career in construction, engineering, or architecture. It helps in making informed decisions, managing resources effectively, and ensuring the safety and sustainability of buildings.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Structural Engineering:</b> Designing and analyzing building structures to ensure stability and safety</li>
+            <li><b>Building Systems Design:</b> Designing systems such as HVAC, electrical, and plumbing to ensure functionality and efficiency</li>
+            <li><b>Construction Management:</b> Overseeing construction projects to ensure they are completed on time and within budget</li>
+            <li><b>Sustainability:</b> Implementing sustainable design practices to minimize environmental impact</li>
+            <li><b>Project Coordination:</b> Coordinating with architects, engineers, and contractors to ensure seamless project execution</li>
+            <li><b>Building Codes and Regulations:</b> Ensuring compliance with building codes and regulations</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Structural Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Structural engineers design and analyze building structures to ensure stability and safety.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Building Systems Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Building systems engineers design systems such as HVAC, electrical, and plumbing to ensure functionality and efficiency.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Construction Manager</h3><hr>
+                <div class="career-description">
+                    <p>Construction managers oversee construction projects to ensure they are completed on time and within budget.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Sustainability Consultant</h3><hr>
+                <div class="career-description">
+                    <p>Sustainability consultants implement sustainable design practices to minimize environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+<%- include('partials/footer') %>
+</body>
+</html>
