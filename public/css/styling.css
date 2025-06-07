@@ -593,7 +593,7 @@ button:hover {
 }
 
 .filter-group {
-    position: relative; /* For custom dropdown */
+    position: sticky; /* For custom dropdown */
 }
 
 .filter-group label {
