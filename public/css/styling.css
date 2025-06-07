@@ -1,0 +1,710 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;   
+    scroll-behavior: smooth;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+header {
+    background-color: white;
+    color: rgb(6, 71, 192);
+    padding: 15px ;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: static;
+    bottom: 90%;
+    width: 100%;
+    background-color: rgb(6, 71, 192);
+    text-align: center;
+    padding: 15px;
+    color: white;   
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo{
+    margin-left: 15px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: fit-content;
+    display: inline;   
+}
+
+.logolink{  
+    color:rgb(6, 71, 192)e;
+    text-decoration: none;
+}
+
+.logolink:hover{
+    color: gray;
+}
+
+nav{
+    width: fit-content;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline;
+    text-decoration: none;
+    color: rgb(6, 71, 192);
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 10%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    color: white;
+    position: relative;
+}
+
+/* Overlay for better text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.getStartedBtn {
+    background-color: rgb(6, 71, 192);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.section {
+    margin: 10px;
+    padding: 60px;
+    text-align: center;
+}
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size:25px;
+}
+
+.mainpages:active{
+    color: white;
+}
+
+.mainpages{
+color: black;
+margin: 3px;
+text-decoration: none;
+}
+
+.mainpages:hover{
+color: gray;
+}
+
+.getstarted{
+    color :white;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.getstarted:hover{
+    color :gray;
+}
+.getStartedBtn:hover {
+    background-color:rgb(6, 71, 192);
+}
+/*MAJORS PAGE CSS*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 70px;
+}
+/*serach*/
+#searchBox {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*in search function removes the boxes while not changing the layout */
+.hidden{
+    visibility: hidden;
+    position: absolute;
+}
+/*this block is for the mobile phones an tablets to have vertical apperance*/
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.major-box {
+    display: none;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* Hover Overlay Effect */
+.major-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.major-box:hover::before {
+    opacity: 1;
+}
+
+.major-box span {
+    position: relative;
+    z-index: 2; /* Keeps text above overlay */
+}
+/* Background Images for Each Major */
+.engineering {
+    background: url('./../pics/engineering.jpg') center/cover no-repeat;
+}
+
+.business {
+    background: url('./../pics/business.jpg') center/cover no-repeat;
+}
+
+.computer-science {
+    background: url('./../pics/CSpic.jpeg') center/cover no-repeat;
+}
+
+.architecture{
+    background: url('./../pics/architecture engineering .jpg') center/cover no-repeat;
+}
+
+.electronics-communication{
+    background: url('./../pics/electro 2jpg.jpg') center/cover no-repeat;
+}
+
+.chemical{
+    background: url('./../pics/chemicals .jpg') center/cover no-repeat;
+}
+
+.mechanical{
+    background: url('./../pics/mechanical.jpg') center/cover no-repeat;
+}
+
+.Agricultural{
+    background: url('./../pics/Agricultural.jpg') center/cover no-repeat;
+}
+
+.accounting{
+    background: url('./../pics/accounting .jpg') center/cover no-repeat;
+}
+
+.marketing{
+    background: url('./../pics/marketing.jpg') center/cover no-repeat;
+}
+
+.finance{
+    background: url('./../pics/finance.jpeg') center/cover no-repeat;
+}
+
+.Entrepreneurship{
+    background: url('./../pics/enter.jpg') center/cover no-repeat;
+}
+
+.humanresources{
+    background: url('./../pics/hr .jpg') center/cover no-repeat;
+}
+
+.SupplyChainManagement{
+    background: url('./../pics/supply.jpg') center/cover no-repeat;
+}
+
+.software-testing{
+    background: url('./../pics/SoftwareTesting.jpg') center/cover no-repeat;
+}
+
+.artificial-intelligence{
+    background: url('./../pics/AI.jpg') center/cover no-repeat;
+}
+
+.cyber-security{
+    background: url('./../pics/cyber security.jpg') center/cover no-repeat;
+}
+
+.data-science{
+    background: url('./../pics/data-science.jpg') center/cover no-repeat;
+}
+
+.hci{
+    background: url('./../pics/HCI.jpg') center/cover no-repeat;
+}
+
+.information-systems{
+    background: url('./../pics/InfoSystem.jpg') center/cover no-repeat;
+}
+
+.iot{
+    background: url('./../pics/internet-of-things.jpg') center/cover no-repeat;
+}
+
+.software-development{
+    background: url('./../pics/Software Development.jpg') center/cover no-repeat;
+}
+
+.software-testing{
+    background: url('./../pics/SoftwareTesting.jpg') center/cover no-repeat;
+}
+
+/* START major description pages*/
+/* Description */
+
+.description {
+    background-color: #fff;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.description a {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+.careers, .internships, .mentorship {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.career-card {
+    background-color: #2C3E50; /* Navy blue */
+    border: 1px solid #1A252F;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+}
+
+.career-card:hover {
+    background-color: #1A252F; /* Darker navy blue on hover */
+}
+
+.career-card h3 {
+    color: #FFD700; /* Gold color for career path names */
+    margin-bottom: 10px;
+}
+
+.career-description {
+    border: none; /* Remove border */
+    padding: 10px;
+    color: #fff; /* White color for description text */
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.mentorship button, .internships button {
+    display: block;
+    margin: 20px auto 0;
+}
+.description {
+    width: calc(95% - 230px); /* Adjust width to fit beside the career links */
+    margin-left: 250px; /* Leave space for the career links */
+}
+
+#career-links {
+    float: left; /* Ensure the career links stay on the left */
+}
+
+#career-links {
+    position: fixed;
+    top: 63px;
+    left: 5px;
+    width: 190px;
+    height: 90px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px ;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+}
+  
+#career-links a {
+    display: block;
+    margin: 20px 0; /* Add spacing between buttons */
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF; /* Button background color */
+    padding: 20px 15px; /* Add padding for button-like appearance */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text inside the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a button effect */
+}
+
+#career-links a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+  
+#career-links a:hover {
+    text-decoration: underline;
+}
+/* END major description pages */
+
+/* start of internships and mentorships page*/
+#internships {
+    margin-top: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-card {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    border-radius: 10px;
+    width: 1000px; /* Adjust width as needed */
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+    width: 100px; /* Set a fixed width for the image */
+    border-radius: 10px;
+    margin-left: auto; /* Align image to the right */
+}
+
+.course-card h5 {
+    margin: 0px 0;
+    font-size: 1.3em;}
+.course-card p {
+    font-size: 1.3em;
+    color: rgb(6, 71, 192);
+}
+.course-card button {
+    display: inline-block;
+    margin-top: auto; /* Push the button to the bottom */
+    padding: 20px;
+    background-color:rgb(6, 71, 192);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Center the button */
+}
+
+.calendar {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    gap: 20px; /* Increased gap for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h2 {
+    grid-column: span 7; /* Title spans all columns */
+    text-align: center;
+}
+
+.month-selector {
+    grid-column: span 7; /* Selector spans all columns */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day {
+    background-color: rgb(6, 71, 192);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    min-height: 120px; /* Ensure a minimum height for each day */
+}
+
+.day h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.session {
+    background-color: white;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    font-size: 0.9em;
+    position: relative;
+}
+/* CSS styles for different months */
+.june {
+    background-color: #392F5A;
+}
+
+.july {
+    background-color: #6A0572;
+}
+
+.august {
+    background-color: #A24D3D;
+}
+
+.september {
+    background-color: #ca4040;
+}
+
+
+
+/* Filter styles */
+.filter-container {
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal layout */
+    margin: 20px;
+    gap: 20px; /* Add space between filters */
+    color: rgb(6, 71, 192);
+}
+
+.filter-group {
+    position: relative; /* For custom dropdown */
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensure label is on top */
+}
+
+/* Custom dropdown styles */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content div:hover {
+    background-color: rgb(6, 71, 192);
+}
+
+.show {
+    display: block;
+}
+
+#internships {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333333;
+    padding: 10px;
+    margin: 15px;
+}
+/* END of internship and mentorships page*/
+
+/* Hide Content Initially */
+.hidden {
+    display: none;
+}
+
+/* General Button */
+button {
+    background: rgb(6, 71, 192);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: rgb(73, 120, 206);;
+}
+
+/* Slideshow styles */
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshow img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide {
+            
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 3s;
+    width: 60%;
+    height: auto;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 6s;
+    width: 70%;
+    height: auto;
+}

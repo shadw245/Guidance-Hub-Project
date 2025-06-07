@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Finance starts here!</h2>
+        <h3>About Finance</h3>
+        <p>Finance is the study and management of money, investments, and other financial instruments. It plays a crucial role in the economy, helping individuals and organizations make informed financial decisions.</p>
+        <p>In this section, we will explore the fundamentals of finance, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in finance or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Finance in business involves managing financial resources, analyzing investments, and ensuring the financial health of an organization.</p>
+
+        <h3>What is Business Finance?</h3>
+        <p>Business finance involves managing a company's financial resources to achieve its goals and maximize value. It includes activities such as financial planning, investment analysis, and risk management.</p>
+        <p>Understanding business finance is crucial for anyone looking to pursue a career in finance, management, or entrepreneurship. It helps in making informed decisions, managing resources effectively, and ensuring the financial health of an organization.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Financial Planning:</b> Developing strategies to manage financial resources and achieve business goals</li>
+            <li><b>Investment Analysis:</b> Evaluating investment opportunities to maximize returns</li>
+            <li><b>Risk Management:</b> Identifying and mitigating financial risks</li>
+            <li><b>Budgeting:</b> Creating and managing budgets to control costs and allocate resources</li>
+            <li><b>Financial Reporting:</b> Preparing financial statements to provide insights into the company's financial health</li>
+            <li><b>Tax Planning:</b> Developing strategies to minimize tax liabilities and ensure compliance with tax laws</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Financial Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Financial analysts evaluate investment opportunities and provide insights to help businesses make informed financial decisions.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Investment Banker</h3><hr>
+                <div class="career-description">
+                    <p>Investment bankers assist companies in raising capital, managing mergers and acquisitions, and providing financial advisory services.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Risk Manager</h3><hr>
+                <div class="career-description">
+                    <p>Risk managers identify and mitigate financial risks to protect the company's assets and ensure stability.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Financial Planner</h3><hr>
+                <div class="career-description">
+                    <p>Financial planners help individuals and businesses develop strategies to achieve their financial goals and manage their finances effectively.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet of Things</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Internet of Things starts here!</h2>
+        <h3>About Internet of Things</h3>
+        <p>The Internet of Things (IoT) refers to the network of physical objects embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet. It plays a crucial role in modern technology, driving innovation and efficiency.</p>
+        <p>In this section, we will explore the fundamentals of IoT, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in IoT or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>IoT in business involves using connected devices to collect and analyze data, automate processes, and improve decision-making.</p>
+
+        <h3>What is Internet of Things?</h3>
+        <p>Internet of Things involves connecting physical devices to the internet to collect and exchange data. It includes activities such as sensor integration, data analysis, and network management.</p>
+        <p>Understanding IoT is crucial for anyone looking to pursue a career in technology, engineering, or data science. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Sensor Integration:</b> Embedding sensors in physical devices to collect data</li>
+            <li><b>Data Analysis:</b> Analyzing data collected from IoT devices to uncover patterns and insights</li>
+            <li><b>Network Management:</b> Managing the network of connected devices to ensure seamless communication</li>
+            <li><b>Security:</b> Ensuring the security of IoT devices and data</li>
+            <li><b>Automation:</b> Automating processes using data from IoT devices</li>
+            <li><b>System Design:</b> Designing IoT systems to meet specific business needs</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>IoT Developer</h3><hr>
+                <div class="career-description">
+                    <p>IoT developers design and implement IoT solutions to connect devices and systems.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>IoT Architect</h3><hr>
+                <div class="career-description">
+                    <p>IoT architects design the overall structure of IoT systems to ensure they meet business needs.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Data Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Data analysts interpret data collected from IoT devices to provide actionable insights.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Network Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Network engineers manage the network of connected devices to ensure seamless communication.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+
+      <%- include('partials/footer') %>
+
+</body>
+</html>

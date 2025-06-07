@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Systems</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Information Systems starts here!</h2>
+        <h3>About Information Systems</h3>
+        <p>Information Systems (IS) involves the study of systems that manage and process information. It plays a crucial role in business operations, helping organizations make informed decisions and improve efficiency.</p>
+        <p>In this section, we will explore the fundamentals of information systems, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in IS or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>IS in business involves using technology to manage and analyze data, support decision-making, and streamline operations.</p>
+
+        <h3>What is Information Systems?</h3>
+        <p>Information Systems is the study of how people, technology, and processes interact to collect, process, store, and distribute information. It includes activities such as database management, systems analysis, and information security.</p>
+        <p>Understanding IS is crucial for anyone looking to pursue a career in technology, management, or business. It helps in making informed decisions, managing resources effectively, and improving organizational performance.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Systems Analysis:</b> Analyzing and designing information systems to meet business needs</li>
+            <li><b>Database Management:</b> Managing databases to ensure data integrity and accessibility</li>
+            <li><b>Information Security:</b> Protecting information systems from unauthorized access and cyber threats</li>
+            <li><b>Project Management:</b> Managing IT projects to ensure they are completed on time and within budget</li>
+            <li><b>Business Intelligence:</b> Analyzing data to provide insights and support decision-making</li>
+            <li><b>Technical Support:</b> Providing support and troubleshooting for information systems</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Systems Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Systems analysts analyze and design information systems to meet business needs.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Database Administrator</h3><hr>
+                <div class="career-description">
+                    <p>Database administrators manage databases to ensure data integrity and accessibility.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Information Security Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Information security analysts protect information systems from unauthorized access and cyber threats.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>IT Project Manager</h3><hr>
+                <div class="career-description">
+                    <p>IT project managers manage IT projects to ensure they are completed on time and within budget.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+
+
+</body>
+</html>

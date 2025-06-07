@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+    <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Cybersecurity starts here!</h2>
+        <h3>About Cybersecurity</h3>
+        <p>Cybersecurity involves protecting computer systems, networks, and data from digital attacks. It plays a crucial role in safeguarding sensitive information and ensuring the integrity of digital infrastructure.</p>
+        <p>In this section, we will explore the fundamentals of cybersecurity, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in cybersecurity or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Cybersecurity in business involves implementing measures to protect against cyber threats and ensure the security of digital assets.</p>
+
+        <h3>What is Cybersecurity?</h3>
+        <p>Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It includes activities such as threat detection, risk management, and incident response.</p>
+        <p>Understanding cybersecurity is crucial for anyone looking to pursue a career in IT, security, or management. It helps in making informed decisions, managing resources effectively, and ensuring the protection of digital assets.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Threat Detection:</b> Identifying potential cyber threats and vulnerabilities</li>
+            <li><b>Risk Management:</b> Assessing and mitigating risks to protect digital assets</li>
+            <li><b>Incident Response:</b> Responding to and managing security breaches and incidents</li>
+            <li><b>Security Policy Development:</b> Creating and implementing security policies and procedures</li>
+            <li><b>Network Security:</b> Protecting network infrastructure from unauthorized access and attacks</li>
+            <li><b>Data Protection:</b> Ensuring the confidentiality, integrity, and availability of data</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Cybersecurity Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Cybersecurity analysts monitor and protect an organization's network and systems from cyber threats.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Penetration Tester</h3><hr>
+                <div class="career-description">
+                    <p>Penetration testers simulate cyber attacks to identify vulnerabilities in systems and networks.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Security Consultant</h3><hr>
+                <div class="career-description">
+                    <p>Security consultants provide expert advice on how to protect an organization's digital assets.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Incident Responder</h3><hr>
+                <div class="career-description">
+                    <p>Incident responders manage and respond to security breaches and incidents to minimize damage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+
+</body>
+</html>

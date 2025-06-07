@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics and Communication Engineering</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+    <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Electronics and Communication Engineering starts here!</h2>
+        <h3>About Electronics and Communication Engineering</h3>
+        <p>Electronics and Communication Engineering (ECE) involves the study and application of electronic systems and communication technologies. It plays a crucial role in modern technology, driving innovation and connectivity.</p>
+        <p>In this section, we will explore the fundamentals of ECE, its importance in industry, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in ECE or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>ECE in industry involves designing and developing electronic devices and communication systems to improve connectivity and efficiency.</p>
+
+        <h3>What is Electronics and Communication Engineering?</h3>
+        <p>Electronics and Communication Engineering is the discipline that focuses on the design, development, and application of electronic devices and communication systems. It includes activities such as circuit design, signal processing, and telecommunications.</p>
+        <p>Understanding ECE is crucial for anyone looking to pursue a career in technology, engineering, or telecommunications. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Circuit Design:</b> Designing and developing electronic circuits to meet specific requirements</li>
+            <li><b>Signal Processing:</b> Analyzing and manipulating signals to improve communication and data transmission</li>
+            <li><b>Telecommunications:</b> Developing and maintaining communication systems to ensure connectivity</li>
+            <li><b>Embedded Systems:</b> Designing and programming embedded systems for various applications</li>
+            <li><b>Network Design:</b> Creating and optimizing networks to improve data transmission and connectivity</li>
+            <li><b>Project Management:</b> Managing ECE projects to ensure they are completed on time and within budget</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Electronics Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Electronics engineers design and develop electronic devices and systems to meet specific requirements.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Communication Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Communication engineers develop and maintain communication systems to ensure connectivity.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Signal Processing Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Signal processing engineers analyze and manipulate signals to improve communication and data transmission.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Embedded Systems Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Embedded systems engineers design and program embedded systems for various applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+
+</body>
+</html>

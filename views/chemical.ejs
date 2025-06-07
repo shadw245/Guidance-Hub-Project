@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Engineering</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+ <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Chemical Engineering starts here!</h2>
+        <h3>About Chemical Engineering</h3>
+        <p>Chemical Engineering involves the application of chemical principles to design and develop processes for manufacturing chemicals, materials, and energy. It plays a crucial role in various industries, including pharmaceuticals, petrochemicals, and environmental engineering.</p>
+        <p>In this section, we will explore the fundamentals of chemical engineering, its importance in industry, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in chemical engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Chemical engineering in industry involves designing processes to convert raw materials into valuable products efficiently and sustainably.</p>
+
+        <h3>What is Chemical Engineering?</h3>
+        <p>Chemical Engineering is the discipline that combines chemistry, physics, mathematics, and biology to design and optimize processes for producing chemicals, materials, and energy. It includes activities such as process design, reaction engineering, and materials science.</p>
+        <p>Understanding chemical engineering is crucial for anyone looking to pursue a career in manufacturing, research, or environmental engineering. It helps in making informed decisions, managing resources effectively, and ensuring sustainable practices.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Process Design:</b> Designing and optimizing chemical processes to improve efficiency and reduce costs</li>
+            <li><b>Reaction Engineering:</b> Developing and analyzing chemical reactions to produce desired products</li>
+            <li><b>Materials Science:</b> Studying and developing materials with specific properties for various applications</li>
+            <li><b>Environmental Engineering:</b> Implementing practices to minimize environmental impact and ensure sustainability</li>
+            <li><b>Safety Management:</b> Ensuring the safety of chemical processes and compliance with regulations</li>
+            <li><b>Project Management:</b> Managing chemical engineering projects to ensure they are completed on time and within budget</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Process Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Process engineers design and optimize chemical processes to improve efficiency and reduce costs.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Reaction Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Reaction engineers develop and analyze chemical reactions to produce desired products.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Materials Scientist</h3><hr>
+                <div class="career-description">
+                    <p>Materials scientists study and develop materials with specific properties for various applications.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Environmental Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Environmental engineers implement practices to minimize environmental impact and ensure sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+</body>
+</html>

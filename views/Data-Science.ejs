@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+  <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description" id="description">
+        <h2>Your journey into the world of Data Science starts here!</h2>
+        <h3>About Data Science</h3>
+        <p>Data Science is the field of study that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It plays a crucial role in decision-making and innovation across various industries.</p>
+        <p>In this section, we will explore the fundamentals of data science, its importance in business, and the various career paths available in this field.</p>
+        <p>Whether you are considering a career in data science or simply want to understand its principles, this guide will provide you with the necessary insights.</p>
+        <p>Data science in business involves analyzing data to make informed decisions and drive strategic initiatives.</p>
+
+        <h3>What is Data Science?</h3>
+        <p>Data Science involves using techniques from mathematics, statistics, and computer science to analyze and interpret complex data. It includes activities such as data mining, machine learning, and predictive analytics.</p>
+        <p>Understanding data science is crucial for anyone looking to pursue a career in technology, analytics, or research. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>
+        
+        <h3>Key Responsibilities</h3>
+        <ul>
+            <li><b>Data Collection:</b> Gathering data from various sources for analysis</li>
+            <li><b>Data Cleaning:</b> Preparing and cleaning data to ensure accuracy and consistency</li>
+            <li><b>Data Analysis:</b> Analyzing data to uncover patterns and insights</li>
+            <li><b>Machine Learning:</b> Developing algorithms to make predictions based on data</li>
+            <li><b>Data Visualization:</b> Creating visual representations of data to communicate findings</li>
+            <li><b>Statistical Analysis:</b> Applying statistical methods to interpret data and draw conclusions</li>
+        </ul>
+
+    <!-- Career Paths Section -->
+    <div class="careers" id="career-paths">
+        <h2>Career Paths</h2>
+        <div class="career-container">
+            <div class="career-card">
+                <h3>Data Scientist</h3><hr>
+                <div class="career-description">
+                    <p>Data scientists analyze complex data to extract insights and inform decision-making.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Data Analyst</h3><hr>
+                <div class="career-description">
+                    <p>Data analysts interpret data and provide actionable insights to help businesses make informed decisions.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Machine Learning Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Machine learning engineers design and implement machine learning models to solve real-world problems.</p>
+                </div>
+            </div>
+            <div class="career-card">
+                <h3>Data Engineer</h3><hr>
+                <div class="career-description">
+                    <p>Data engineers build and maintain data infrastructure to support data analysis and machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='interships.html'">View Internships</button>
+        <div class="hidden" id="internshipList">
+        </div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='mentorships.html'">Join Our Mentorship Program</button>
+    </div>
+    </div>
+      <%- include('partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic & Career Guidance</title>
+    <link rel="stylesheet" href="/css/styling.css">
+    <script src="/js/javascript.js"></script>
+        
+</head>
+<body>
+     <%- include('partials/nav') %>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Path with Confidence</h1>
+            <p>Explore majors, career opportunities, and expert mentorship to shape your future.</p>
+            <button class="getStartedBtn"><a class="getstarted" href="login">Get Started</a></button>
+        </div>    
+        <div class="slideshow">
+            <img src="/pics/image1.jpg" alt="Image 1">
+            <img src="/pics/image2.jpg" alt="Image 2">
+            <img src="/pics/image3.jpg" alt="Image 3">
+        </div>
+    </section>
+
+    <section id="majors" class="section">
+        <h2><a class="mainpages" href="majors">Explore Academic Majors</a></h2>
+        <p>Browse through various majors to find the right one for you.</p> 
+    </section>
+    
+    <section id="internships" class="section">
+        <h2><a class="mainpages" href="interships">Internship Opportunities</a></h2>
+        <p>Find real-world experience related to your major.</p>
+    </section>
+    
+    <section id="mentorship" class="section">
+        <h2><a class="mainpages" href="mentorships">Mentorship Program</a></h2>
+        <p>Connect with experienced mentors in your field.</p>
+    </section>
+    
+    <div class="chatbot" id="chatbot">💬</div>
+    
+      <%- include('partials/footer') %>
+
+</body>
+</html>
