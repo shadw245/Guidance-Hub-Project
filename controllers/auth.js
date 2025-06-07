@@ -16,7 +16,7 @@ exports.signup = async (req, res) => {
     // Save user to database
     const newUser = new User({ name, email, mobile, country, gender, password: hashedPassword });
     await newUser.save();
-    res.status(200).json({ message: "Signup successful" });
+    res.redirect("/login");
   } catch (error) {
     console.error("Signup error:", error);
     res.status(500).send("Server error");
