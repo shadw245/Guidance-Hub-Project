@@ -9,58 +9,167 @@
 </head>
 
 <body>
-    <%- include('partials/nav') %>
+   <%- include('partials/nav') %>
 
-    <!-- Major Dropdown -->
-<div class="dropdown">
-  <button class="dropbtn" onclick="toggleDropdown('majorDropdownContent')">Select Major</button>
-  <div id="majorDropdownContent" class="dropdown-content">
-    <div onclick="selectMajor('All')">All</div>
-   <% Object.keys(subMajors).forEach(major => { %>
-  <div onclick="selectMajor('<%= major %>')"><%= major %></div>
-<% }); %>
-  </div>
-</div>
-<input type="hidden" id="majorSelect" value="All" />
+    <div class="filter-container">
+        <div class="filter-group">
+            <label for="majorSelect">Select Major:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('majorDropdownContent')">Select Major</button>
+                <div id="majorDropdownContent" class="dropdown-content">
+                    <div onclick="selectMajor('All')">All</div>
+                    <div onclick="selectMajor('Computer Science')">Computer Science</div>
+                    <div onclick="selectMajor('Engineering')">Engineering</div>
+                    <div onclick="selectMajor('Business')">Business</div>
+                </div>
+                <input type="hidden" id="majorSelect" value="All">
+            </div>
+        </div>
 
-<!-- Sub-Major Dropdown -->
-<div class="dropdown">
-  <button class="dropbtn" onclick="toggleDropdown('dropdownContent')">Select Sub-Major</button>
-  <div id="dropdownContent" class="dropdown-content"></div>
-</div>
-<input type="hidden" id="subMajorSelect" value="All" />
+        <div class="filter-group">
+            <label for="subMajorSelect">Select Sub-Major:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropdownContent')">Select Sub-Major</button>
+                <div id="dropdownContent" class="dropdown-content"></div>
+                <input type="hidden" id="subMajorSelect" value="All">
+            </div>
+        </div>
 
-<!-- Status Dropdown -->
-<div class="dropdown">
-  <button class="dropbtn" onclick="toggleDropdown('statusDropdownContent')">Select Status</button>
-  <div id="statusDropdownContent" class="dropdown-content">
-    <div onclick="selectStatus('All')">All</div>
-    <div onclick="selectStatus('Booked')">Booked</div>
-    <div onclick="selectStatus('Not Booked')">Not Booked</div>
-  </div>
-</div>
-<input type="hidden" id="statusSelect" value="All" />
+        <div class="filter-group">
+            <label for="statusSelect">Select Status:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('statusDropdownContent')">Select Status</button>
+                <div id="statusDropdownContent" class="dropdown-content">
+                    <div onclick="selectStatus('All')">All</div>
+                    <div onclick="selectStatus('Booked')">Booked</div>
+                    <div onclick="selectStatus('Not Booked')">Not Booked</div>
+                </div>
+                <input type="hidden" id="statusSelect" value="All">
+            </div>
+        </div>
+    </div>
 
+    <div class="course-list" id="courseList">
+        <!-- Computer Science Mentorships -->
+        <div class="course-card" data-major="Computer Science" data-sub-major="Software Development">
+            <img src="/pics/user.png" alt="image">
+            <h5>Software Development Mentorship</h5>
+            <p>June 5, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Software Development Mentorship', 'June 5', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Software Testing">
+            <img src="/pics/user.png" alt="image">
+            <h5>Software Testing Mentorship</h5>
+            <p>June 5, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Software Testing Mentorship', 'June 5', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Human-Computer Interaction (HCI)">
+            <img src="/pics/user.png" alt="image">
+            <h5>HCI Mentorship</h5>
+            <p>June 6, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'HCI Mentorship', 'June 6', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Cyber Security">
+            <img src="/pics/user.png" alt="image">
+            <h5>Cyber Security Mentorship</h5>
+            <p>June 6, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Cyber Security Mentorship', 'June 6', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Information Systems">
+            <img src="/pics/user.png" alt="image">
+            <h5>Information Systems Mentorship</h5>
+            <p>June 7, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Information Systems Mentorship', 'June 7', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Data Science">
+            <img src="/pics/user.png" alt="image">
+            <h5>Data Science Mentorship</h5>
+            <p>June 7, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Data Science Mentorship', 'June 7', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Artificial Intelligence">
+            <img src="/pics/user.png" alt="image">
+            <h5>Artificial Intelligence Mentorship</h5>
+            <p>July 10, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Artificial Intelligence Mentorship', 'July 10', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Computer Science" data-sub-major="Internet of Things (IOT)">
+            <img src="/pics/user.png" alt="image">
+            <h5>Internet of Things Mentorship</h5>
+            <p>July 10, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Internet of Things Mentorship', 'July 10', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
 
+        <!-- Engineering Mentorships -->
+        <div class="course-card" data-major="Engineering" data-sub-major="Electronics & Communication">
+            <img src="/pics/user.png" alt="image">
+            <h5>Electronics & Communication Mentorship</h5>
+            <p>August 5, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Electronics & Communication Mentorship', 'August 5', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Engineering" data-sub-major="Architecture">
+            <img src="/pics/user.png" alt="image">
+            <h5>Architecture Mentorship</h5>
+            <p>August 5, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Architecture Mentorship', 'August 5', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Engineering" data-sub-major="Chemicals">
+            <img src="/pics/user.png" alt="image">
+            <h5>Chemicals Mentorship</h5>
+            <p>August 6, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Chemicals Mentorship', 'August 6', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Engineering" data-sub-major="Mechanical">
+            <img src="/pics/user.png" alt="image">
+            <h5>Mechanical Mentorship</h5>
+            <p>August 6, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Mechanical Mentorship', 'August 6', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Engineering" data-sub-major="Agricultural">
+            <img src="/pics/user.png" alt="image">
+            <h5>Agricultural Mentorship</h5>
+            <p>August 7, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Agricultural Mentorship', 'August 7', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
 
-
-<div class="course-list" id="courseList">
-<!--  Mentorships -->
-       
- 
-<% mentorships.forEach(mentorship => { %>
-  <div class="course-card" 
-       data-major="<%= mentorship.major %>" 
-       data-sub-major="<%= mentorship.subMajor %>">
-    <h3><%= mentorship.title %></h3>
-    <p>Date: <%= mentorship.date %> | Time: <%= mentorship.time %></p>
-    <button class="book-button" onclick="bookSession(this, '<%= mentorship.title %>', '<%= mentorship.date %>', '<%= mentorship.time %>')">
-      Book Now
-    </button>
-  </div>
-<% }) %>
-
-
+        <!-- Business Mentorships -->
+        <div class="course-card" data-major="Business" data-sub-major="Finance">
+            <img src="/pics/user.png" alt="image">
+            <h5>Finance Mentorship</h5>
+            <p>September 5, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Finance Mentorship', 'September 5', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Business" data-sub-major="Accounting">
+            <img src="/pics/user.png" alt="image">
+            <h5>Accounting Mentorship</h5>
+            <p>September 5, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Accounting Mentorship', 'September 5', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Business" data-sub-major="Marketing">
+            <img src="/pics/user.png" alt="image">
+            <h5>Marketing Mentorship</h5>
+            <p>September 6, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Marketing Mentorship', 'September 6', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Business" data-sub-major="Human Resource">
+            <img src="/pics/user.png" alt="image">
+            <h5>Human Resource Mentorship</h5>
+            <p>September 6, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Human Resource Mentorship', 'September 6', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Business" data-sub-major="Entrepreneurship">
+            <img src="/pics/user.png" alt="image">
+            <h5>Entrepreneurship Mentorship</h5>
+            <p>September 7, 10:00 AM - 11:00 AM</p>
+            <button class="book-button" onclick="bookSession(this, 'Entrepreneurship Mentorship', 'September 7', '10:00 AM - 11:00 AM')">Book Now</button>
+        </div>
+        <div class="course-card" data-major="Business" data-sub-major="Supply Chain Management">
+            <img src="/pics/user.png" alt="image">
+            <h5>Supply Chain Management Mentorship</h5>
+            <p>September 7, 1:00 PM - 2:00 PM</p>
+            <button class="book-button" onclick="bookSession(this, 'Supply Chain Management Mentorship', 'September 7', '1:00 PM - 2:00 PM')">Book Now</button>
+        </div>
+    </div>
 
     <!-- Calendar Style Schedule Section -->
     <section class="calendar">
@@ -94,7 +203,11 @@
             <div class="session" id="sunday-sessions"></div>
         </div>
     </section>
-    <!--Footer-->
-    <%- include('partials/footer') %>
+
+    <footer class="footer" id="footer">
+        <p>&copy; 2025 GuidanceHub. All rights reserved.</p>
+        <p>Email: info@guidancehub.com</p>
+        <p>Contact Number: +123-456-7890</p>
+    </footer>
 </body>
 </html>
