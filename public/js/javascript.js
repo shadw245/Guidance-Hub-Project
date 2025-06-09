@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
         const subMajors = {   
             "Computer Science": [
                 "Software Development",
@@ -220,3 +221,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
+
+//logout
+    document.addEventListener("DOMContentLoaded", function () {
+    const logoutNav = document.getElementById("logoutNav");
+
+    // Check if user is logged in via session
+    fetch("/api/auth/check-session") // ✅ Backend route to check session
+        .then(response => response.json())
+        .then(data => {
+            if (data.loggedIn) {
+                logoutNav.style.display = "block"; // ✅ Show logout button when logged in
+            }
+        })
+        .catch(error => console.error("Session check error:", error));
+});
+
+document.getElementById("logoutNav").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default navigation
+
+    fetch("/logout")
+        .then(() => {
+            alert("Logged out successfully!");
+            window.location.href = "/login"; // ✅ Redirect to login after logout
+        })
+        .catch(err => console.error("Logout error:", err));
+});
