@@ -1,6 +1,5 @@
 // Signup Function
-async function signupValidation(event) {
-    
+function validateSignupForm() {
     const name = document.getElementById("signup-name").value.trim();
     const email = document.getElementById("signup-email").value.trim();
     const password = document.getElementById("signup-password").value.trim();
@@ -9,55 +8,56 @@ async function signupValidation(event) {
     const country = document.getElementById("signup-country").value;
     const gender = document.querySelector('input[name="gender"]:checked');
 
-
+    // ✅ Validate email
     const allowedProviders = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com"];
     const emailPattern = /^[a-zA-Z0-9._%+-]+@([a-zA-Z0-9.-]+)$/;
+    const match = email.match(emailPattern);
+    if (!match || !allowedProviders.includes(match[1])) {
+        alert("Please enter an email from the allowed providers: Gmail, Yahoo, Outlook, Hotmail.");
+        return false;
+    }
 
-const match = email.match(emailPattern);
-if (!match || !allowedProviders.includes(match[1])) {
-    alert("Please enter an email from the allowed providers: Gmail, Yahoo, Outlook, Hotmail.");
-    return false;
-}
-
-
-    // validate Password 
+    // ✅ Validate password
     const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
     if (!passwordPattern.test(password)) {
         alert("Password must be at least 8 characters long, include an uppercase letter, a number, and a special character.");
         return false;
     }
 
-    // confirm password matches
+    // ✅ Check password match
     if (password !== confirmPassword) {
         alert("Passwords do not match.");
         return false;
     }
 
-    // Validate phone number (10 digits)
-    const phonePattern = /^\d{11}$/;
+    // ✅ Validate phone number (11 digits)
+    const phonePattern = /^\d{10}$/;
     if (!phonePattern.test(mobile)) {
         alert("Please enter a valid 11-digit mobile number.");
         return false;
     }
 
-    // Validate country selection
-    if (country === "") {
+    // ✅ Ensure country & gender are selected
+    if (!country) {
         alert("Please select a country.");
         return false;
     }
-
-    // Validate gender selection
     if (!gender) {
         alert("Please select a gender.");
         return false;
     }
 
+    return { name, email, gender: gender.value, country, mobile, password }; 
+}
 
-    // Send data to backend
-    // Collect gender, country, and mobile if they exist in your form
-    const userData = { name, email, gender: gender.value, country, mobile, password };
+async function signupValidation(event) {
+    event.preventDefault(); 
+
+    const userData = validateSignupForm();
+    if (!userData) return; 
+
     try {
-        const response = await fetch("/signup", {
+        const response = await fetch("/api/auth/signup", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(userData),
@@ -66,32 +66,41 @@ if (!match || !allowedProviders.includes(match[1])) {
         const data = await response.json();
 
         if (response.ok) {
-            alert("Signup successful!");
-            document.getElementById("flip").checked = false; // Switch to login form
-            return true;
-        } else {
             alert(data.message);
-            return false;
-}
+            window.location.href = "/login"; 
+        } else {
+            alert(data.message || "Signup failed! Please try again.");
+        }
     } catch (error) {
         console.error("Signup error:", error);
-        alert("Signup failed!");
-        return false;
+        alert("Signup failed! Please check your connection.");
     }
 }
 
-// Login Function
-function loginValidation(event) {
-    event.preventDefault(); // Prevent form submission
+async function loginValidation(event) {
+    event.preventDefault(); // Stop default form submission
 
     const email = document.getElementById("login-email").value;
     const password = document.getElementById("login-password").value;
 
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+    try {
+        const response = await fetch("/api/auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password }),
+        });
 
-    if (storedUser && storedUser.email === email && storedUser.password === password) {
-        window.location.href = "majors.html"; // Redirect on successful login
-    } else {
-        alert("Invalid email or password!");
+        const data = await response.json();
+
+        if (response.ok) {
+            alert(data.message);
+            window.location.href = data.redirect; // ✅ Redirect user after login
+        } else {
+            alert(data.message || "Invalid credentials! Redirecting to signup...");
+            window.location.href = "/signup";
+        } // Redirect to signup on failure}
+    } catch (error) {
+        console.error("Login error:", error);
+        alert("Login failed!");
     }
 }
