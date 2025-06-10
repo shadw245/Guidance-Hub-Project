@@ -121,9 +121,37 @@ app.get("/mechanical", (req, res) => {
     res.render("mechanical");
 });
 
-app.get("/mentorships", (req, res) => {
-    res.render("mentorships");
+const Mentorship = require('./models/mentorships');
+app.get("/mentorships", async (req, res) => {
+    try {
+        const mentorships = await Mentorship.find();
+        const subMajors = {};
+
+        mentorships.forEach(m => {
+            if (!subMajors[m.major]) {
+                subMajors[m.major] = [];
+            }
+            if (!subMajors[m.major].includes(m.subMajor)) {
+                subMajors[m.major].push(m.subMajor);
+            }
+        });
+
+        res.render("mentorships", { mentorships, subMajors });
+    } catch (error) {
+        console.error("Error fetching mentorships:", error);
+        res.status(500).send("Server Error");
+    }
 });
+
+app.get('/api/mentorships', async (req, res) => {
+    try {
+        const mentorships = await Mentorship.find();
+        res.json({ mentorships });
+    } catch (error) {
+        res.status(500).json({ error: "Server Error" });
+    }
+});
+
 
 app.get("/software-development", (req, res) => {
     res.render("software-development");
@@ -140,3 +168,7 @@ app.get("/SupplyChain", (req, res) => {
 app.listen(8080, () => {
     console.log("Server is running on 8080");
 });
+
+
+const instructorRoutes = require('./routes/instructor');
+app.use('/instructor', instructorRoutes);
