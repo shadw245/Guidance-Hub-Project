@@ -38,35 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-        const subMajors = {   
-            "Computer Science": [
-                "Software Development",
-                "Software Testing",
-                "Human-Computer Interaction (HCI)",
-                "Cyber Security",
-                "Information Systems",
-                "Data Science",
-                "Artificial Intelligence",
-                "Internet of Things (IOT)"
-            ],
-            "Engineering": [
-                "Electronics & Communication",
-                "Architecture",
-                "Chemicals",
-                "Mechanical",
-                "Agricultural"
-            ],
-            "Business": [
-                "Finance",
-                "Accounting",
-                "Marketing",
-                "Human Resource",
-                "Entrepreneurship",
-                "Supply Chain Management"
-            ]
-        };
-
-        function filterCourses() {
+         function filterCourses() {
             const selectedMajor = document.getElementById('majorSelect').value;
             const selectedSubMajor = document.getElementById('subMajorSelect').value;
             const selectedStatus = document.getElementById('statusSelect').value;
@@ -86,49 +58,52 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 else {
                     card.style.display = 'none';
-                }               
-            });            
+                }
+                
+            });
+            
         }
         
-        function updateSubMajorOptions() {
-            const majorSelect = document.getElementById('majorSelect');
-            const selectedMajor = majorSelect.value;
-            const dropdownContent = document.getElementById('dropdownContent');
-        
-        // Clear previous options
-            dropdownContent.innerHTML = '';
+    function updateSubMajorOptions() {
+    const selectedMajor = document.getElementById('majorSelect').value;
+    const dropdownContent = document.getElementById('dropdownContent');
 
-        // Add "All" option
-            const allOption = document.createElement('div');
-            allOption.textContent = "All";
-            allOption.onclick = function () {
-                selectSubMajor("All");
-            };
-            dropdownContent.appendChild(allOption);
+    // Clear previous options
+    dropdownContent.innerHTML = '';
+
+    // Add "All" option
+    const allOption = document.createElement('div');
+    allOption.textContent = "All";
+    allOption.onclick = () => selectSubMajor("All");
+    dropdownContent.appendChild(allOption);
+
+    // Filter sub-majors dynamically based on the selected major
+fetch('/api/mentorships')
+    .then(response => response.json())
+    .then(data => {
+        const filteredSubMajors = data.mentorships
+            .filter(m => selectedMajor === "All" || m.major === selectedMajor)
+            .map(m => m.subMajor);
+
+        const uniqueSubMajors = [...new Set(filteredSubMajors)];
+
+        uniqueSubMajors.forEach(subMajor => {
+            const div = document.createElement('div');
+            div.textContent = subMajor;
+            div.onclick = () => selectSubMajor(subMajor);
+            dropdownContent.appendChild(div);
+        });
+    })
+    .catch(error => console.error("Error fetching sub-majors:", error));
+
+}
         
-            // Populate sub-major options based on selected major
-            if (selectedMajor in subMajors) {
-                subMajors[selectedMajor].forEach(subMajor => {
-                    const div = document.createElement('div');
-                    div.textContent = subMajor;
-                    div.onclick = function () {
-                        selectSubMajor(subMajor);
-                    };
-                    dropdownContent.appendChild(div);
-                });
-            }
-        // Trigger filtering
-            filterCourses();
-        }
-        
-        function selectMajor(major) {
-            const majorSelect = document.getElementById('majorSelect');
-            majorSelect.value = major;
-            const majorButton = document.querySelector('.dropbtn[onclick="toggleDropdown(\'majorDropdownContent\')"]');
-            majorButton.textContent = major; // Update button text to selected major
-            updateSubMajorOptions(); // Update sub-major options based on selected major
-            filterCourses(); // Reapply filters after selecting major
-        }
+function selectMajor(major) {
+    document.getElementById('majorSelect').value = major;
+    document.querySelector('.dropbtn[onclick="toggleDropdown(\'majorDropdownContent\')"]').textContent = major;
+    updateSubMajorOptions(); // Update sub-major options dynamically
+    filterCourses(); // Apply filters immediately
+}
 
         function selectSubMajor(subMajor) {
             const subMajorSelect = document.getElementById('subMajorSelect');
