@@ -66,17 +66,3 @@ exports.logout = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
-
-exports.requireAdmin = async (req, res, next) => {
-    if (!req.session?.user || !req.session.user.isAdmin) {
-        return res.status(403).json({ message: "Access denied. Admins only." });
-    }
-    next();
-};
-
-exports.requireInstructor = async (req, res, next) => {
-    if (!req.session?.user || !req.session.user.isInstructor) {
-        return res.status(403).json({ message: "Access denied. Instructors only." });
-    }
-    next();
-};
