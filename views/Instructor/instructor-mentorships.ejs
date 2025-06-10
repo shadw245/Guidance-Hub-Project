@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instructor</title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+   
+<h2>Mentorships (Instructor)</h2>
+<a href="/instructor/mentorships/new">Add New Mentorship</a>
+<ul>
+  <% mentorships.forEach(m => { %>
+    <li>
+      <%= m.title %> - <%= m.major %> / <%= m.subMajor %>
+      <a href="/instructor/mentorships/<%= m._id %>/edit">Edit</a>
+      <form action="/instructor/mentorships/<%= m._id %>/delete" method="POST" style="display:inline;">
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% }) %>
+
+   
+</body>
+</html>
