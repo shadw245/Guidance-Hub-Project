@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+</head>
+<body>
+   <header>
+        <div class="logo"><a class="logolink" href="/website">GuidanceHub</a></div>
+        <nav>
+            <ul>
+                <li><a href="/majors">Majors</a></li>
+                <li><a href="/interships">Internships</a></li>
+                <li><a href="/mentorships">Mentorships</a></li>
+                <% if (user && user.isAdmin) { %>
+                <li><a href="/users">Users</a></li>
+                <% } %>
+                <li><a href="#footer">contact</a></li> 
+                <% if (user) { %>
+                <li><a href="/api/auth/logout">Logout</a></li>
+                <% } %>
+            </ul>
+        </nav>
+    </header>  
+   
+</body>
+</html>
