@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Opportunities</title>
+    <link rel="stylesheet" href="/css/styling.css">
+    <script src="/js/javascript.js"></script>
+</head>
+
+<body>
+   <%- include('partials/nav', { user: typeof user !== 'undefined' ? user : null }) %>
+
+    <section id="internships">
+        <h2>Internship Opportunities</h2>
+        <p>Find internships based on your major.</p>
+
+        <!-- Admin/Instructor Controls -->
+        <% if (user && (user.isAdmin || user.isInstructor)) { %>
+        <div class="admin-controls">
+            <button onclick="showAddInternshipForm()" class="add-btn">Add New Internship</button>
+        </div>
+
+        <!-- Add Internship Form (Hidden by default) -->
+        <div id="addInternshipForm" class="add-form" style="display: none;">
+            <h3>Add New Internship</h3>
+            <form onsubmit="addInternship(event)">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="major">Major:</label>
+                    <select id="major" name="major" required>
+                        <option value="">Select Major</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subMajor">Sub-Major:</label>
+                    <input type="text" id="subMajor" name="subMajor" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirements">Requirements:</label>
+                    <textarea id="requirements" name="requirements"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" name="duration" placeholder="e.g., 3 months">
+                </div>
+                <div class="form-group">
+                    <label for="companyUrl">Company URL:</label>
+                    <input type="url" id="companyUrl" name="companyUrl">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Add Internship</button>
+                    <button type="button" onclick="hideAddInternshipForm()">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <% } %>
+        
+        <div class="filter-container">
+            <div class="filter-group">
+                <label for="majorSelect">Select Major:</label>
+                <div class="custom-dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('majorDropdownContent')">Select Major</button>
+                    <div id="majorDropdownContent" class="dropdown-content">
+                        <div onclick="selectMajor('All')">All</div>
+                        <div onclick="selectMajor('Computer Science')">Computer Science</div>
+                        <div onclick="selectMajor('Engineering')">Engineering</div>
+                        <div onclick="selectMajor('Business')">Business</div>
+                    </div>
+                    <input type="hidden" id="majorSelect" value="All">
+                </div>
+            </div>
+        
+            <div class="filter-group">
+                <label for="subMajorSelect">Select Sub-Major:</label>
+                <div class="custom-dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('dropdownContent')">Select Sub-Major</button>
+                    <div id="dropdownContent" class="dropdown-content"></div>
+                    <input type="hidden" id="subMajorSelect" value="All">
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <label for="statusSelect">Select Status:</label>
+                <div class="custom-dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown('statusDropdownContent')">Select Status</button>
+                    <div id="statusDropdownContent" class="dropdown-content">
+                        <div onclick="selectStatus('All')">All</div>
+                        <div onclick="selectStatus('Applied')">Applied</div>
+                        <div onclick="selectStatus('Not Applied')">Not Applied</div>
+                    </div>
+                    <input type="hidden" id="statusSelect" value="All">
+                </div>
+            </div>
+        </div>
+
+        <div id="internship-cards">
+            <% if (internships && internships.length > 0) { %>
+                <% internships.forEach(function(internship) { %>
+                    <div class="course-card" data-major="<%= internship.major %>" data-sub-major="<%= internship.subMajor %>" data-status="<%= internship.status %>">
+                        <h3><%= internship.title %></h3>
+                        <% if (internship.requirements) { %>
+                            <p><strong>Requirements:</strong> <%= internship.requirements %></p>
+                        <% } %>
+                        <% if (internship.description) { %>
+                            <p><strong>Description:</strong> <%= internship.description %></p>
+                        <% } %>
+                        <% if (internship.duration) { %>
+                            <p><strong>Duration:</strong> <%= internship.duration %></p>
+                        <% } %>
+                        <% if (internship.companyUrl) { %>
+                            <p><a href="<%= internship.companyUrl %>" target="_blank"><%= internship.companyUrl %></a></p>
+                        <% } %>
+                        
+                        <div class="button-container">
+                            <% if (user) { %>
+                                <% if (internship.status === 'Not Applied') { %>
+                                    <button class="apply-button" onclick="applyInternship('<%= internship._id %>')">Apply Now</button>
+                                <% } else if (internship.appliedBy && internship.appliedBy.toString() === user._id) { %>
+                                    <button class="cancel-button" onclick="cancelApplication('<%= internship._id %>')">Cancel Application</button>
+                                <% } else { %>
+                                    <button class="applied-button" disabled>Already Applied</button>
+                                <% } %>
+                            <% } else { %>
+                                <button class="login-button" onclick="window.location.href='/login'">Login to Apply</button>
+                            <% } %>
+                            
+                            <% if (user && (user.isAdmin || user.isInstructor)) { %>
+                                <button class="delete-button" onclick="deleteInternship('<%= internship._id %>')">Delete</button>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <div class="no-results">
+                    <p>No internships available at the moment.</p>
+                </div>
+            <% } %>
+        </div>
+    </section>
+
+    <script>
+        // Show/Hide Add Internship Form
+        function showAddInternshipForm() {
+            document.getElementById('addInternshipForm').style.display = 'block';
+        }
+
+        function hideAddInternshipForm() {
+            document.getElementById('addInternshipForm').style.display = 'none';
+        }
+
+        // Add new internship
+        async function addInternship(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const internshipData = Object.fromEntries(formData);
+            
+            try {
+                const response = await fetch('/internships/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(internshipData)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('Internship added successfully!');
+                    location.reload();
+                } else {
+                    alert('Error: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error adding internship');
+            }
+        }
+
+        // Apply for internship
+        async function applyInternship(internshipId) {
+            try {
+                const response = await fetch(`/internships/apply/${internshipId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('Applied successfully!');
+                    location.reload();
+                } else {
+                    alert('Error: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error applying for internship');
+            }
+        }
+
+        // Cancel application
+        async function cancelApplication(internshipId) {
+            if (confirm('Are you sure you want to cancel your application?')) {
+                try {
+                    const response = await fetch(`/internships/cancel/${internshipId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        alert('Application cancelled successfully!');
+                        location.reload();
+                    } else {
+                        alert('Error: ' + result.message);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Error cancelling application');
+                }
+            }
+        }
+
+        // Delete internship
+        async function deleteInternship(internshipId) {
+            if (confirm('Are you sure you want to delete this internship?')) {
+                try {
+                    const response = await fetch(`/internships/delete/${internshipId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        alert('Internship deleted successfully!');
+                        location.reload();
+                    } else {
+                        alert('Error: ' + result.message);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Error deleting internship');
+                }
+            }
+        }
+
+        // Filter functionality (keep existing filter code)
+        function filterInternships() {
+            const majorFilter = document.getElementById('majorSelect').value;
+            const subMajorFilter = document.getElementById('subMajorSelect').value;
+            const statusFilter = document.getElementById('statusSelect').value;
+            
+            const cards = document.querySelectorAll('.course-card');
+            
+            cards.forEach(card => {
+                const cardMajor = card.getAttribute('data-major');
+                const cardSubMajor = card.getAttribute('data-sub-major');
+                const cardStatus = card.getAttribute('data-status');
+                
+                const majorMatch = majorFilter === 'All' || cardMajor === majorFilter;
+                const subMajorMatch = subMajorFilter === 'All' || cardSubMajor === subMajorFilter;
+                const statusMatch = statusFilter === 'All' || cardStatus === statusFilter;
+                
+                if (majorMatch && subMajorMatch && statusMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Update sub-major options based on selected major
+        function updateSubMajorOptions(selectedMajor) {
+            const subMajorDropdown = document.getElementById('dropdownContent');
+            subMajorDropdown.innerHTML = '<div onclick="selectSubMajor(\'All\')">All</div>';
+            
+            const cards = document.querySelectorAll('.course-card');
+            const subMajors = new Set();
+            
+            cards.forEach(card => {
+                const cardMajor = card.getAttribute('data-major');
+                if (selectedMajor === 'All' || cardMajor === selectedMajor) {
+                    subMajors.add(card.getAttribute('data-sub-major'));
+                }
+            });
+            
+            subMajors.forEach(subMajor => {
+                subMajorDropdown.innerHTML += `<div onclick="selectSubMajor('${subMajor}')">${subMajor}</div>`;
+            });
+        }
+
+        // Filter selection functions
+        function selectMajor(major) {
+            document.getElementById('majorSelect').value = major;
+            document.querySelector('#majorDropdownContent').parentElement.querySelector('.dropbtn').textContent = major;
+            updateSubMajorOptions(major);
+            document.getElementById('subMajorSelect').value = 'All';
+            document.querySelector('#dropdownContent').parentElement.querySelector('.dropbtn').textContent = 'All';
+            filterInternships();
+        }
+
+        function selectSubMajor(subMajor) {
+            document.getElementById('subMajorSelect').value = subMajor;
+            document.querySelector('#dropdownContent').parentElement.querySelector('.dropbtn').textContent = subMajor;
+            filterInternships();
+        }
+
+        function selectStatus(status) {
+            document.getElementById('statusSelect').value = status;
+            document.querySelector('#statusDropdownContent').parentElement.querySelector('.dropbtn').textContent = status;
+            filterInternships();
+        }
+    </script>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
