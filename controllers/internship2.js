@@ -56,3 +56,8 @@ exports.cancelApplication = async (req, res) => {
         if (!application) {
             return res.status(404).json({ success: false, message: 'No application found for this internship' });
         }
+    } catch (error) {
+        console.error('Error in cancelApplication:', error);
+        res.status(500).json({ success: false, message: 'Server error' });
+    }
+};
