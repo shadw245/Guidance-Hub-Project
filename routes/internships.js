@@ -23,3 +23,8 @@ const requireInstructorOrAdmin = (req, res, next) => {
 
 // Public routes - anyone can view internships
 router.get('/', internshipController.getAllInternships);
+// Admin/Instructor only routes
+router.post('/add', requireInstructorOrAdmin, internshipController.addInternship);
+router.delete('/delete/:internshipId', requireInstructorOrAdmin, internshipController.deleteInternship);
+
+module.exports = router;
