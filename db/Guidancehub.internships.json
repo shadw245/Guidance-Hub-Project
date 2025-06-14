@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf0"
+  },
+  "title": "Machine Learning Engineer",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "requirements": "ML algorithms, data preprocessing",
+  "description": "Build and train ML models & Gain Hands-on Experience on Machine Learning",
+  "duration": "2 months",
+  "companyUrl": "https://www.valeo.com/en/find-a-job-or-internship/",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf1"
+  },
+  "title": "AI Engineer",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "requirements": "NLP, AI frameworks",
+  "description": "Gain hands-on experience in artificial intelligence",
+  "duration": "2 months",
+  "companyUrl": "https://www.valeo.com/en/find-a-job-or-internship/",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf2"
+  },
+  "title": "Data Analyst",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "requirements": "SQL, data visualization",
+  "description": "Analyze and interpret datasets",
+  "duration": "3 months",
+  "companyUrl": "https://www.valeo.com/en/find-a-job-or-internship/",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf3"
+  },
+  "title": "Data Scientist",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "requirements": "Statistical modeling, Python",
+  "description": "Develop predictive models & Analyze Data Models",
+  "duration": "3 months",
+  "companyUrl": "https://www.valeo.com/en/find-a-job-or-internship/",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf4"
+  },
+  "title": "Cyber Security Analyst",
+  "major": "Computer Science",
+  "subMajor": "Cyber Security",
+  "requirements": "Network security, penetration testing",
+  "description": "Monitor security threats",
+  "duration": "3 months",
+  "companyUrl": "https://www.valeo.com/en/find-a-job-or-internship/",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf5"
+  },
+  "title": "Financial Analyst",
+  "major": "Business",
+  "subMajor": "Finance",
+  "requirements": "Financial modeling, data analysis",
+  "description": "Analyze financial data and create reports",
+  "duration": "3 months",
+  "companyUrl": "https://www.cibeg.com/en/careers",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf6"
+  },
+  "title": "Marketing Specialist",
+  "major": "Business",
+  "subMajor": "Marketing",
+  "requirements": "Digital marketing, market research",
+  "description": "Develop marketing strategies and campaigns",
+  "duration": "2 months",
+  "companyUrl": "https://www.cibeg.com/en/careers",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf7"
+  },
+  "title": "Operations Analyst",
+  "major": "Business",
+  "subMajor": "Supply Chain Management",
+  "requirements": "Process optimization, analytics",
+  "description": "Improve supply chain efficiency",
+  "duration": "3 months",
+  "companyUrl": "https://www.cibeg.com/en/careers",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf8"
+  },
+  "title": "Electronics Engineer",
+  "major": "Engineering",
+  "subMajor": "Electronics & Communication",
+  "requirements": "Circuit design, PCB layout",
+  "description": "Design and test electronic circuits",
+  "duration": "3 months",
+  "companyUrl": "https://elsewedyelectric.com/en/careers",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "684a18f965890352f6b24cf9"
+  },
+  "title": "Architecture Intern",
+  "major": "Engineering",
+  "subMajor": "Architecture",
+  "requirements": "AutoCAD, Revit, design principles",
+  "description": "Assist in architectural design and planning",
+  "duration": "3 months",
+  "companyUrl": "https://elsewedyelectric.com/en/careers",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T00:02:01.932Z"
+  }
+}]

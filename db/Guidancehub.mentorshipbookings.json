@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "684afb4c135d069bb9db2f8c"
+  },
+  "mentorship": {
+    "$oid": "684af9f8fe4f621132203acc"
+  },
+  "user": {
+    "$oid": "68447b244829c0a5c6426e8f"
+  },
+  "status": "Cancelled",
+  "bookedAt": {
+    "$date": "2025-06-12T16:07:40.922Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-12T16:07:40.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-12T16:07:42.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684bd558a5c24101dbd26bfe"
+  },
+  "mentorship": {
+    "$oid": "684af9f8fe4f621132203ae4"
+  },
+  "user": {
+    "$oid": "684552a590bbb2b5c39262a3"
+  },
+  "status": "Cancelled",
+  "bookedAt": {
+    "$date": "2025-06-13T07:38:00.581Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T07:38:00.587Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T07:38:17.009Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684cb24f3cdd59dbd61e43b7"
+  },
+  "mentorship": {
+    "$oid": "684af9f8fe4f621132203af3"
+  },
+  "user": {
+    "$oid": "68447b244829c0a5c6426e8f"
+  },
+  "status": "Cancelled",
+  "bookedAt": {
+    "$date": "2025-06-13T23:20:47.036Z"
+  },
+  "createdAt": {
+    "$date": "2025-06-13T23:20:47.038Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-13T23:20:48.939Z"
+  },
+  "__v": 0
+}]

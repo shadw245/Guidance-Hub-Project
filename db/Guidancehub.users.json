@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "68447b244829c0a5c6426e8f"
+  },
+  "name": "seif",
+  "email": "seifahmed@gmail.com",
+  "password": "$2b$10$siXqqW2qcJ.ML.nnwJNm6Op1maPhZkP47nAk0YNPQ7C3BqJB.dC7q",
+  "gender": "male",
+  "isInstructor": false,
+  "isAdmin": true
+},
+{
+  "_id": {
+    "$oid": "684552a590bbb2b5c39262a3"
+  },
+  "name": "zeyad",
+  "email": "zeyad@outlook.com",
+  "mobile": "0128912345",
+  "country": "eg",
+  "gender": "male",
+  "password": "$2b$10$fs3k.dAh9FTePNIkcLcxEubhYlA2YtF9N3BoRXX5WoOZ9bS5S2VF.",
+  "isInstructor": false,
+  "isAdmin": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684593382bdb2f0c3cfe4dec"
+  },
+  "name": " shadw",
+  "email": "shadw@gmail.com",
+  "password": "$2b$10$HY14oH783Xh20wv9BGpGPeBSDIjoqdF6U6KnQIjG2eloH0LG1KgpS",
+  "gender": "female",
+  "isInstructor": true,
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "684593792bdb2f0c3cfe4ded"
+  },
+  "name": " jana",
+  "email": "jana@gmail.com",
+  "password": "$2b$10$G590coxU.uvxXelvG46mw.9Jy5.VKnab3/A60WKrcht0UDM9zuRc2",
+  "gender": "female",
+  "isInstructor": true,
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "6845938b2bdb2f0c3cfe4dee"
+  },
+  "name": " donia",
+  "email": "donia@gmail.com",
+  "password": "$2b$10$tZM5hG67KPf4W0vzgHylcufS2//Ild1LkuwT2Q85Q.jkuuqyMGcS6",
+  "gender": "female",
+  "isInstructor": true,
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "6845e2378aca9ae732fcd6c5"
+  },
+  "name": "youssef",
+  "email": "youssef@gmail.com",
+  "mobile": "0197610972",
+  "country": "jp",
+  "gender": "male",
+  "password": "$2b$10$spUkutxcWK3jxreUgfyZseG19vNwWl0ebvEom3lh1pRhJKi2y8AqG",
+  "isAdmin": false,
+  "isInstructor": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684c0f46672a1ec86e23102b"
+  },
+  "name": "hana",
+  "email": "hana@gmail.com",
+  "mobile": "0139810921",
+  "country": "eg",
+  "gender": "female",
+  "password": "$2b$10$JX7lyVCs8M.J0ibamxXs9OyaA1P1fF3zzrZbSbwO5tluLEMlStDT.",
+  "isAdmin": false,
+  "isInstructor": false,
+  "appliedInternships": [],
+  "appliedMentorships": [],
+  "__v": 0
+}]

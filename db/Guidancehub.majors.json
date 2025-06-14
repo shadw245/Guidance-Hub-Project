@@ -1,0 +1,1000 @@
+[{
+  "_id": {
+    "$oid": "684b2833fe4f621132203b1d"
+  },
+  "name": "Business",
+  "slug": "business",
+  "img": "business.jpg",
+  "submajors": [
+    {
+      "name": "Accounting",
+      "slug": "accounting",
+      "img": "accounting.jpg",
+      "description": "\n        <h2>Your journey into the world of Accounting starts here!</h2>\n        <h3>About Accounting</h3>\n        <p>Accounting involves the systematic recording, reporting, and analysis of financial transactions. It plays a crucial role in business operations, helping organizations track their financial performance and comply with regulations.</p>\n        <p>In this section, we will explore the fundamentals of accounting, its importance in business, and the various career paths available in this field.</p>\n        <p>Whether you are considering a career in accounting or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n        <p>Accounting in business involves managing financial records, preparing financial statements, and ensuring compliance with financial regulations.</p>\n        \n        <h3>What is Accounting?</h3>\n        <p>Accounting is the process of recording, classifying, and summarizing financial transactions to provide useful information for decision-making. It includes activities such as bookkeeping, financial reporting, budgeting, and tax compliance.</p>\n        <p>Understanding accounting is crucial for anyone looking to pursue a career in finance, management, or entrepreneurship. It helps in making informed decisions, managing resources effectively, and ensuring the financial health of an organization.</p>\n      ",
+      "responsibilities": [
+        {
+          "name": "Financial Analysis",
+          "description": "Analyzing financial data to assess the company's performance and identify trends."
+        },
+        {
+          "name": "Cost Management",
+          "description": "Monitoring and controlling costs to improve profitability."
+        },
+        {
+          "name": "Bookkeeping",
+          "description": "Recording daily financial transactions such as sales, purchases, and expenses."
+        },
+        {
+          "name": "Financial Reporting",
+          "description": "Preparing financial statements to provide insights into the company's financial health."
+        },
+        {
+          "name": "Budgeting and Forecasting",
+          "description": "Creating budgets and financial forecasts to guide business planning."
+        },
+        {
+          "name": "Tax Compliance",
+          "description": "Ensuring compliance with tax laws and preparing tax returns."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Accountant",
+          "description": "Accountants are responsible for preparing and examining financial records, ensuring accuracy, and compliance with laws."
+        },
+        {
+          "title": "Management Accountant",
+          "description": "Management accountants analyze financial data to help management make informed business decisions."
+        },
+        {
+          "title": "Forensic Accountant",
+          "description": "Forensic accountants investigate financial discrepancies and fraud, often working with law enforcement."
+        },
+        {
+          "title": "Tax Advisor",
+          "description": "Tax advisors provide guidance on tax planning and compliance, helping individuals and businesses minimize tax liabilities."
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "slug": "marketing",
+      "img": "marketing.jpg",
+      "description": "\n        <h2>Your journey into the world of Marketing starts here!</h2>\n        <h3>About Marketing</h3>\n        <p>Marketing is the process of promoting and selling products or services, including market research and advertising. It plays a crucial role in business by driving sales and building brand awareness.</p>\n        <p>In this section, we will explore the fundamentals of marketing, its importance in business, and the various career paths available in this field.</p>\n        <p>Whether you are considering a career in marketing or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n        <p>Marketing in business involves creating strategies to attract customers and promote products or services effectively.</p>\n        \n        <h3>What is Business Marketing?</h3>\n        <p>Business marketing involves identifying customer needs, developing products or services to meet those needs, and promoting them to drive sales. It includes activities such as market research, advertising, and sales strategy.</p>\n        <p>Understanding business marketing is crucial for anyone looking to pursue a career in marketing, management, or entrepreneurship. It helps in making informed decisions, managing resources effectively, and ensuring the success of marketing campaigns.</p>\n      ",
+      "responsibilities": [
+        {
+          "name": "Market Research",
+          "description": "Conducting research to understand customer needs, preferences, and market trends"
+        },
+        {
+          "name": "Advertising",
+          "description": "Creating and managing advertising campaigns to promote products or services"
+        },
+        {
+          "name": "Brand Management",
+          "description": "Developing and maintaining a strong brand image and reputation"
+        },
+        {
+          "name": "Sales Strategy:",
+          "description": " Developing strategies to increase sales and achieve business goals"
+        },
+        {
+          "name": "Digital Marketing:",
+          "description": "Utilizing online platforms and social media to reach and engage customers"
+        },
+        {
+          "name": "Customer Relationship Management:",
+          "description": "Building and maintaining relationships with customers to ensure satisfaction and loyalty"
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Marketing Manager",
+          "description": "Marketing managers oversee marketing campaigns and strategies to promote products or services effectively."
+        },
+        {
+          "title": "Market Research Analyst",
+          "description": "Market research analysts gather and analyze data to understand market trends and customer preferences."
+        },
+        {
+          "title": "Digital Marketing Specialist",
+          "description": "Digital marketing specialists use online platforms and social media to reach and engage customers."
+        },
+        {
+          "title": "Brand Manager",
+          "description": "Brand managers develop and maintain a strong brand image and reputation for products or services."
+        }
+      ]
+    },
+    {
+      "name": "Entrepreneurship",
+      "slug": "entrepreneurship",
+      "img": "enter.jpg",
+      "description": "\n          <h2>Your journey into the world of Entrepreneurship starts here!</h2>\n          <h3>About Entrepreneurship</h3>\n          <p>Entrepreneurship is the process of starting and running a new business, often characterized by innovation and risk-taking. It plays a vital role in driving economic growth and creating jobs.</p>\n          <p>In this section, we will explore the fundamentals of entrepreneurship, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in entrepreneurship or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Entrepreneurship in business involves creating and managing a new venture, often based on an innovative idea.</p>\n          \n          <h3>What is Entrepreneurship Business?</h3>\n          <p>Entrepreneurship is the process of designing, launching, and running a new business, typically a startup offering a product, service, or process. Entrepreneurs are individuals who create and/or invest in these businesses.</p>\n          <p>Entrepreneurship is a key driver of economic growth and innovation, as it leads to the creation of new jobs, products, and services.</p>\n          <p>It involves identifying a market need, developing a business plan, securing funding, and managing the operations of the business.</p>\n          <p>Entrepreneurship is the process of starting and running a new business, bearing most of the risks and enjoying most of the rewards. Entrepreneurs play a crucial role in the economy by bringing new ideas to market and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Business Planning",
+          "description": "Creating a comprehensive business plan outlining vision, goals, target market, and financial projections."
+        },
+        {
+          "name": "Market Research",
+          "description": "Conducting thorough market research to understand customer needs, industry trends, and competitive landscape."
+        },
+        {
+          "name": "Innovation",
+          "description": "Bringing new ideas to life, developing new products, improving existing ones, or exploring new markets."
+        },
+        {
+          "name": "Risk Management",
+          "description": "Taking calculated risks, making strategic investments, and adapting to market fluctuations."
+        },
+        {
+          "name": "Building Strategic Partnerships",
+          "description": "Maintaining partnerships to enhance business operations and expand market reach."
+        },
+        {
+          "name": "Leadership and Management",
+          "description": "Leading teams, making decisions, and resolving conflicts to drive the business forward."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Venture Capitalist or Investor",
+          "description": "Invests in startups and small businesses with high growth potential, providing funding and guidance."
+        },
+        {
+          "title": "Starting Your Own Business",
+          "description": "Creating and managing a company from the ground up, developing its products, services, and strategies."
+        },
+        {
+          "title": "Business Consultant",
+          "description": "Provides expert advice to organizations on strategy, management, and marketing."
+        },
+        {
+          "title": "Franchise Owner",
+          "description": "Operates a business under the brand of an established company, benefiting from its reputation and support."
+        }
+      ]
+    },
+    {
+      "name": "Finance",
+      "slug": "finance",
+      "img": "finance.jpeg",
+      "description": "\n          <h2>Your journey into the world of Finance starts here!</h2>\n          <h3>About Finance</h3>\n          <p>Finance is the study and management of money, investments, and other financial instruments. It plays a crucial role in the economy, helping individuals and organizations make informed financial decisions.</p>\n          <p>In this section, we will explore the fundamentals of finance, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in finance or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Finance in business involves managing financial resources, analyzing investments, and ensuring the financial health of an organization.</p>\n          \n          <h3>What is Business Finance?</h3>\n          <p>Business finance involves managing a company's financial resources to achieve its goals and maximize value. It includes activities such as financial planning, investment analysis, and risk management.</p>\n          <p>Understanding business finance is crucial for anyone looking to pursue a career in finance, management, or entrepreneurship. It helps in making informed decisions, managing resources effectively, and ensuring the financial health of an organization.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Financial Planning",
+          "description": "Developing strategies to manage financial resources and achieve business goals."
+        },
+        {
+          "name": "Investment Analysis",
+          "description": "Evaluating investment opportunities to maximize returns."
+        },
+        {
+          "name": "Risk Management",
+          "description": "Identifying and mitigating financial risks."
+        },
+        {
+          "name": "Budgeting",
+          "description": "Creating and managing budgets to control costs and allocate resources."
+        },
+        {
+          "name": "Financial Reporting",
+          "description": "Preparing financial statements to provide insights into the company's financial health."
+        },
+        {
+          "name": "Tax Planning",
+          "description": "Developing strategies to minimize tax liabilities and ensure compliance with tax laws."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Financial Analyst",
+          "description": "Evaluates investment opportunities and provides insights to help businesses make informed financial decisions."
+        },
+        {
+          "title": "Investment Banker",
+          "description": "Assists companies in raising capital, managing mergers and acquisitions, and providing financial advisory services."
+        },
+        {
+          "title": "Risk Manager",
+          "description": "Identifies and mitigates financial risks to protect the company's assets and ensure stability."
+        },
+        {
+          "title": "Financial Planner",
+          "description": "Helps individuals and businesses develop strategies to achieve their financial goals and manage their finances effectively."
+        }
+      ]
+    },
+    {
+      "name": "Human Resources",
+      "slug": "human resources",
+      "img": "hr.jpg",
+      "description": "\n          <h2>Your journey into the world of Human Resources starts here!</h2>\n          <h3>About Human Resources</h3>\n          <p>Human Resources (HR) is the department within an organization that focuses on the recruitment, management, and development of the organization's employees. HR plays a crucial role in ensuring that the organization is equipped with the right talent to achieve its goals.</p>\n          <p>This section will explore the fundamentals of HR, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in HR or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n\n          <h3>What is Human Resources?</h3>\n          <p>Human Resources is responsible for managing the employee lifecycle, from recruitment and onboarding to training and development, performance management, and employee relations. HR professionals ensure that the organization complies with labor laws and fosters a positive workplace culture.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Recruitment and Staffing",
+          "description": "Attracting, screening, and hiring qualified candidates to fill job openings."
+        },
+        {
+          "name": "Employee Training and Development",
+          "description": "Overseeing training programs to enhance employee skills and career growth."
+        },
+        {
+          "name": "Performance Management",
+          "description": "Developing performance appraisal systems to evaluate employee performance and provide feedback."
+        },
+        {
+          "name": "Compensation and Benefits",
+          "description": "Managing employee compensation, benefits, and payroll to ensure competitive remuneration."
+        },
+        {
+          "name": "Employee Relations",
+          "description": "Addressing employee concerns, mediating conflicts, and fostering a positive work environment."
+        },
+        {
+          "name": "Compliance",
+          "description": "Ensuring the organization adheres to labor laws and regulations, maintaining a fair workplace."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "HR Manager",
+          "description": "Oversees the HR department, ensuring that HR policies and procedures are implemented effectively."
+        },
+        {
+          "title": "Recruitment Specialist",
+          "description": "Focuses on sourcing, interviewing, and hiring candidates for job openings."
+        },
+        {
+          "title": "Training and Development Manager",
+          "description": "Designs and implements training programs to enhance employee skills and performance."
+        },
+        {
+          "title": "Compensation and Benefits Analyst",
+          "description": "Manages employee compensation structures and benefits programs."
+        }
+      ]
+    },
+    {
+      "name": "Supply Chain Management",
+      "slug": "supply chain management",
+      "img": "supply.jpg",
+      "description": "\n          <h2>Your journey into the world of Supply Chain Management starts here!</h2>\n          <h3>About Supply Chain Management</h3>\n          <p>Supply Chain Management (SCM) involves the management of the flow of goods and services, including all processes that transform raw materials into final products. It plays a crucial role in ensuring efficiency and effectiveness in business operations.</p>\n          <p>In this section, we will explore the fundamentals of supply chain management, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in SCM or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>SCM in business involves coordinating and integrating the flow of materials, information, and finances from suppliers to consumers.</p>\n\n          <h3>What is Supply Chain Management?</h3>\n          <p>Supply Chain Management is the process of managing the flow of goods and services from the point of origin to the point of consumption. It includes activities such as procurement, production, distribution, and logistics.</p>\n          <p>Understanding SCM is crucial for anyone looking to pursue a career in logistics, operations, or management. It helps in making informed decisions, managing resources effectively, and ensuring the smooth operation of supply chains.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Procurement",
+          "description": "Acquiring raw materials and goods from suppliers."
+        },
+        {
+          "name": "Production Planning",
+          "description": "Coordinating and managing production processes to ensure timely delivery of products."
+        },
+        {
+          "name": "Inventory Management",
+          "description": "Managing inventory levels to meet demand while minimizing costs."
+        },
+        {
+          "name": "Logistics",
+          "description": "Coordinating transportation and distribution of goods."
+        },
+        {
+          "name": "Supplier Relationship Management",
+          "description": "Building and maintaining relationships with suppliers to ensure quality and reliability."
+        },
+        {
+          "name": "Risk Management",
+          "description": "Identifying and mitigating risks in the supply chain."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Supply Chain Manager",
+          "description": "Oversees the entire supply chain process, ensuring efficiency and effectiveness."
+        },
+        {
+          "title": "Logistics Coordinator",
+          "description": "Manages the transportation and distribution of goods to ensure timely delivery."
+        },
+        {
+          "title": "Procurement Specialist",
+          "description": "Acquires raw materials and goods from suppliers, ensuring quality and cost-effectiveness."
+        },
+        {
+          "title": "Inventory Manager",
+          "description": "Oversees inventory levels to meet demand while minimizing costs."
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "684b2833fe4f621132203b1e"
+  },
+  "name": "Computer Science",
+  "slug": "computer science",
+  "img": "CSpic.jpeg",
+  "submajors": [
+    {
+      "name": "Artificial Intelligence",
+      "slug": "artificial intelligence",
+      "img": "AI.jpg",
+      "description": "\n          <h2>Your journey into the world of Artificial Intelligence starts here!</h2>\n          <h3>About Artificial Intelligence</h3>\n          <p>Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn. It plays a crucial role in various industries, driving innovation and efficiency.</p>\n          <p>In this section, we will explore the fundamentals of AI, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in AI or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>AI in business involves using intelligent systems to automate processes, analyze data, and make decisions.</p>\n\n          <h3>What is Artificial Intelligence?</h3>\n          <p>Artificial Intelligence is the development of computer systems that can perform tasks typically requiring human intelligence, such as visual perception, speech recognition, decision-making, and language translation.</p>\n          <p>Understanding AI is crucial for anyone looking to pursue a career in technology, data science, or engineering. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Machine Learning",
+          "description": "Developing algorithms that allow computers to learn from and make predictions based on data."
+        },
+        {
+          "name": "Data Analysis",
+          "description": "Analyzing large datasets to uncover patterns and insights."
+        },
+        {
+          "name": "Natural Language Processing",
+          "description": "Enabling machines to understand and respond to human language."
+        },
+        {
+          "name": "Computer Vision",
+          "description": "Developing systems that can interpret and make decisions based on visual data."
+        },
+        {
+          "name": "Robotics",
+          "description": "Designing and programming robots to perform tasks autonomously."
+        },
+        {
+          "name": "AI Ethics",
+          "description": "Ensuring the ethical use of AI technologies and addressing issues such as bias and privacy."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "AI Research Scientist",
+          "description": "Develops new algorithms and models to advance the field of artificial intelligence."
+        },
+        {
+          "title": "Machine Learning Engineer",
+          "description": "Designs and implements machine learning models to solve real-world problems."
+        },
+        {
+          "title": "Data Scientist",
+          "description": "Analyzes complex data to extract insights and inform decision-making."
+        },
+        {
+          "title": "AI Ethicist",
+          "description": "Addresses ethical issues related to the development and use of AI technologies."
+        }
+      ]
+    },
+    {
+      "name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "img": "cyber security.jpg",
+      "description": "\n          <h2>Your journey into the world of Cybersecurity starts here!</h2>\n          <h3>About Cybersecurity</h3>\n          <p>Cybersecurity involves protecting computer systems, networks, and data from digital attacks. It plays a crucial role in safeguarding sensitive information and ensuring the integrity of digital infrastructure.</p>\n          <p>In this section, we will explore the fundamentals of cybersecurity, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in cybersecurity or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Cybersecurity in business involves implementing measures to protect against cyber threats and ensure the security of digital assets.</p>\n\n          <h3>What is Cybersecurity?</h3>\n          <p>Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It includes activities such as threat detection, risk management, and incident response.</p>\n          <p>Understanding cybersecurity is crucial for anyone looking to pursue a career in IT, security, or management. It helps in making informed decisions, managing resources effectively, and ensuring the protection of digital assets.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Threat Detection",
+          "description": "Identifying potential cyber threats and vulnerabilities."
+        },
+        {
+          "name": "Risk Management",
+          "description": "Assessing and mitigating risks to protect digital assets."
+        },
+        {
+          "name": "Incident Response",
+          "description": "Responding to and managing security breaches and incidents."
+        },
+        {
+          "name": "Security Policy Development",
+          "description": "Creating and implementing security policies and procedures."
+        },
+        {
+          "name": "Network Security",
+          "description": "Protecting network infrastructure from unauthorized access and attacks."
+        },
+        {
+          "name": "Data Protection",
+          "description": "Ensuring the confidentiality, integrity, and availability of data."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Cybersecurity Analyst",
+          "description": "Monitors and protects an organization's network and systems from cyber threats."
+        },
+        {
+          "title": "Penetration Tester",
+          "description": "Simulates cyber attacks to identify vulnerabilities in systems and networks."
+        },
+        {
+          "title": "Security Consultant",
+          "description": "Provides expert advice on how to protect an organization's digital assets."
+        },
+        {
+          "title": "Incident Responder",
+          "description": "Manages and responds to security breaches and incidents to minimize damage."
+        }
+      ]
+    },
+    {
+      "name": "Data Science",
+      "slug": "data science",
+      "img": "data-science.jpg",
+      "description": "\n          <h2>Your journey into the world of Data Science starts here!</h2>\n          <h3>About Data Science</h3>\n          <p>Data Science is the field of study that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It plays a crucial role in decision-making and innovation across various industries.</p>\n          <p>In this section, we will explore the fundamentals of data science, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in data science or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Data science in business involves analyzing data to make informed decisions and drive strategic initiatives.</p>\n\n          <h3>What is Data Science?</h3>\n          <p>Data Science involves using techniques from mathematics, statistics, and computer science to analyze and interpret complex data. It includes activities such as data mining, machine learning, and predictive analytics.</p>\n          <p>Understanding data science is crucial for anyone looking to pursue a career in technology, analytics, or research. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Data Collection",
+          "description": "Gathering data from various sources for analysis."
+        },
+        {
+          "name": "Data Cleaning",
+          "description": "Preparing and cleaning data to ensure accuracy and consistency."
+        },
+        {
+          "name": "Data Analysis",
+          "description": "Analyzing data to uncover patterns and insights."
+        },
+        {
+          "name": "Machine Learning",
+          "description": "Developing algorithms to make predictions based on data."
+        },
+        {
+          "name": "Data Visualization",
+          "description": "Creating visual representations of data to communicate findings."
+        },
+        {
+          "name": "Statistical Analysis",
+          "description": "Applying statistical methods to interpret data and draw conclusions."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Data Scientist",
+          "description": "Analyzes complex data to extract insights and inform decision-making."
+        },
+        {
+          "title": "Data Analyst",
+          "description": "Interprets data and provides actionable insights to help businesses make informed decisions."
+        },
+        {
+          "title": "Machine Learning Engineer",
+          "description": "Designs and implements machine learning models to solve real-world problems."
+        },
+        {
+          "title": "Data Engineer",
+          "description": "Builds and maintains data infrastructure to support data analysis and machine learning."
+        }
+      ]
+    },
+    {
+      "name": "HCI",
+      "slug": "hCI",
+      "img": "HCI.jpg",
+      "description": "\n          <h2>Your journey into the world of Human-Computer Interaction starts here!</h2>\n          <h3>About Human-Computer Interaction</h3>\n          <p>Human-Computer Interaction (HCI) is the study and design of interaction between people (users) and computers. It plays a crucial role in creating user-friendly interfaces and improving the overall user experience.</p>\n          <p>In this section, we will explore the fundamentals of HCI, its importance in technology, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in HCI or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>HCI in technology involves designing systems that are intuitive, efficient, and enjoyable for users.</p>\n\n          <h3>What is Human-Computer Interaction?</h3>\n          <p>Human-Computer Interaction is the study of how people interact with computers and to design technologies that let humans interact with computers in novel ways. It includes activities such as user interface design, usability testing, and user experience research.</p>\n          <p>Understanding HCI is crucial for anyone looking to pursue a career in technology, design, or research. It helps in making informed decisions, managing resources effectively, and improving the user experience.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "User Interface Design",
+          "description": "Creating interfaces that are easy to use and visually appealing."
+        },
+        {
+          "name": "Usability Testing",
+          "description": "Conducting tests to ensure that systems are user-friendly and meet user needs."
+        },
+        {
+          "name": "User Experience Research",
+          "description": "Studying how users interact with systems to improve their experience."
+        },
+        {
+          "name": "Interaction Design",
+          "description": "Designing interactive elements that enhance user engagement."
+        },
+        {
+          "name": "Accessibility",
+          "description": "Ensuring that systems are accessible to all users, including those with disabilities."
+        },
+        {
+          "name": "Prototyping",
+          "description": "Creating prototypes to test and refine design concepts."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "UI/UX Designer",
+          "description": "Creates user interfaces and experiences that are intuitive and engaging."
+        },
+        {
+          "title": "Usability Analyst",
+          "description": "Conducts tests to ensure that systems are user-friendly and meet user needs."
+        },
+        {
+          "title": "User Experience Researcher",
+          "description": "Studies how users interact with systems to improve their experience."
+        },
+        {
+          "title": "Interaction Designer",
+          "description": "Creates interactive elements that enhance user engagement."
+        }
+      ]
+    },
+    {
+      "name": "Information Systems",
+      "slug": "information systems",
+      "img": "InfoSystem.jpg",
+      "description": "\n          <h2>Your journey into the world of Information Systems starts here!</h2>\n          <h3>About Information Systems</h3>\n          <p>Information Systems (IS) involves the study of systems that manage and process information. It plays a crucial role in business operations, helping organizations make informed decisions and improve efficiency.</p>\n          <p>In this section, we will explore the fundamentals of information systems, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in IS or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>IS in business involves using technology to manage and analyze data, support decision-making, and streamline operations.</p>\n\n          <h3>What is Information Systems?</h3>\n          <p>Information Systems is the study of how people, technology, and processes interact to collect, process, store, and distribute information. It includes activities such as database management, systems analysis, and information security.</p>\n          <p>Understanding IS is crucial for anyone looking to pursue a career in technology, management, or business. It helps in making informed decisions, managing resources effectively, and improving organizational performance.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Systems Analysis",
+          "description": "Analyzing and designing information systems to meet business needs."
+        },
+        {
+          "name": "Database Management",
+          "description": "Managing databases to ensure data integrity and accessibility."
+        },
+        {
+          "name": "Information Security",
+          "description": "Protecting information systems from unauthorized access and cyber threats."
+        },
+        {
+          "name": "Project Management",
+          "description": "Managing IT projects to ensure they are completed on time and within budget."
+        },
+        {
+          "name": "Business Intelligence",
+          "description": "Analyzing data to provide insights and support decision-making."
+        },
+        {
+          "name": "Technical Support",
+          "description": "Providing support and troubleshooting for information systems."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Systems Analyst",
+          "description": "Analyzes and designs information systems to meet business needs."
+        },
+        {
+          "title": "Database Administrator",
+          "description": "Manages databases to ensure data integrity and accessibility."
+        },
+        {
+          "title": "Information Security Analyst",
+          "description": "Protects information systems from unauthorized access and cyber threats."
+        },
+        {
+          "title": "IT Project Manager",
+          "description": "Manages IT projects to ensure they are completed on time and within budget."
+        }
+      ]
+    },
+    {
+      "name": "IOT",
+      "slug": "iot",
+      "img": "internet-of-things.jpg",
+      "description": "\n          <h2>Your journey into the world of Internet of Things starts here!</h2>\n          <h3>About Internet of Things</h3>\n          <p>The Internet of Things (IoT) refers to the network of physical objects embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet. It plays a crucial role in modern technology, driving innovation and efficiency.</p>\n          <p>In this section, we will explore the fundamentals of IoT, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in IoT or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>IoT in business involves using connected devices to collect and analyze data, automate processes, and improve decision-making.</p>\n\n          <h3>What is Internet of Things?</h3>\n          <p>Internet of Things involves connecting physical devices to the internet to collect and exchange data. It includes activities such as sensor integration, data analysis, and network management.</p>\n          <p>Understanding IoT is crucial for anyone looking to pursue a career in technology, engineering, or data science. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Sensor Integration",
+          "description": "Embedding sensors in physical devices to collect data."
+        },
+        {
+          "name": "Data Analysis",
+          "description": "Analyzing data collected from IoT devices to uncover patterns and insights."
+        },
+        {
+          "name": "Network Management",
+          "description": "Managing the network of connected devices to ensure seamless communication."
+        },
+        {
+          "name": "Security",
+          "description": "Ensuring the security of IoT devices and data."
+        },
+        {
+          "name": "Automation",
+          "description": "Automating processes using data from IoT devices."
+        },
+        {
+          "name": "System Design",
+          "description": "Designing IoT systems to meet specific business needs."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "IoT Developer",
+          "description": "Designs and implements IoT solutions to connect devices and systems."
+        },
+        {
+          "title": "IoT Architect",
+          "description": "Designs the overall structure of IoT systems to ensure they meet business needs."
+        },
+        {
+          "title": "Data Analyst",
+          "description": "Interprets data collected from IoT devices to provide actionable insights."
+        },
+        {
+          "title": "Network Engineer",
+          "description": "Manages the network of connected devices to ensure seamless communication."
+        }
+      ]
+    },
+    {
+      "name": "Software Development",
+      "slug": "software development",
+      "img": "software Development.jpg",
+      "description": "\n          <h2>Your journey into the world of Software Development starts here!</h2>\n          <h3>About Software Development</h3>\n          <p>Software Development involves the process of designing, coding, testing, and maintaining software applications. It plays a crucial role in technology, driving innovation and efficiency across various industries.</p>\n          <p>In this section, we will explore the fundamentals of software development, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in software development or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Software development in business involves creating applications that meet user needs and improve operational efficiency.</p>\n\n          <h3>What is Software Development?</h3>\n          <p>Software Development involves using programming languages and tools to create software applications. It includes activities such as requirements analysis, design, coding, testing, and maintenance.</p>\n          <p>Understanding software development is crucial for anyone looking to pursue a career in technology, engineering, or computer science. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Requirements Analysis",
+          "description": "Gathering and analyzing user requirements to define software specifications."
+        },
+        {
+          "name": "Design",
+          "description": "Creating software architecture and design to meet requirements."
+        },
+        {
+          "name": "Coding",
+          "description": "Writing code using programming languages to implement software functionality."
+        },
+        {
+          "name": "Testing",
+          "description": "Conducting tests to ensure software is free of bugs and meets requirements."
+        },
+        {
+          "name": "Maintenance",
+          "description": "Updating and maintaining software to fix issues and improve performance."
+        },
+        {
+          "name": "Documentation",
+          "description": "Creating documentation to support software development and usage."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Software Developer",
+          "description": "Designs and codes software applications to meet user needs."
+        },
+        {
+          "title": "Software Engineer",
+          "description": "Applies engineering principles to design and develop software systems."
+        },
+        {
+          "title": "Quality Assurance Tester",
+          "description": "Conducts tests to ensure software is free of bugs and meets requirements."
+        },
+        {
+          "title": "DevOps Engineer",
+          "description": "Manages the deployment and operations of software applications."
+        }
+      ]
+    },
+    {
+      "name": "Software Testing",
+      "slug": "software testing",
+      "img": "SoftwareTesting.jpg",
+      "description": "\n          <h2>Your journey into the world of Software Testing starts here!</h2>\n          <h3>About Software Testing</h3>\n          <p>Software Testing involves evaluating and verifying that a software application or system meets the specified requirements. It plays a crucial role in ensuring the quality and reliability of software products.</p>\n          <p>In this section, we will explore the fundamentals of software testing, its importance in business, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in software testing or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Software testing in business involves identifying defects, ensuring functionality, and improving the overall quality of software applications.</p>\n\n          <h3>What is Software Testing?</h3>\n          <p>Software Testing involves using various techniques to evaluate the functionality, performance, and security of software applications. It includes activities such as manual testing, automated testing, and performance testing.</p>\n          <p>Understanding software testing is crucial for anyone looking to pursue a career in technology, quality assurance, or development. It helps in making informed decisions, managing resources effectively, and ensuring the delivery of high-quality software products.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Manual Testing",
+          "description": "Performing tests manually to identify defects and ensure functionality."
+        },
+        {
+          "name": "Automated Testing",
+          "description": "Using automated tools to execute tests and compare actual outcomes with expected results."
+        },
+        {
+          "name": "Performance Testing",
+          "description": "Evaluating the performance of software applications under various conditions."
+        },
+        {
+          "name": "Security Testing",
+          "description": "Identifying vulnerabilities and ensuring the security of software applications."
+        },
+        {
+          "name": "Regression Testing",
+          "description": "Ensuring that new changes do not negatively impact existing functionality."
+        },
+        {
+          "name": "Test Documentation",
+          "description": "Creating and maintaining documentation to support testing activities."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Quality Assurance Tester",
+          "description": "Performs tests to ensure software is free of defects and meets requirements."
+        },
+        {
+          "title": "Automated Test Engineer",
+          "description": "Uses automated tools to execute tests and ensure software quality."
+        },
+        {
+          "title": "Performance Tester",
+          "description": "Evaluates the performance of software applications under various conditions."
+        },
+        {
+          "title": "Security Tester",
+          "description": "Identifies vulnerabilities and ensures the security of software applications."
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "684b2833fe4f621132203b1f"
+  },
+  "name": "Engineering",
+  "slug": "engineering",
+  "img": "engineering.jpg",
+  "submajors": [
+    {
+      "name": "Agricultural",
+      "slug": "agricultural",
+      "img": "Agricultural.jpg",
+      "description": "\n          <h2>Your journey into the world of Agricultural Engineering starts here!</h2>\n          <h3>About Agricultural Engineering</h3>\n          <p>Agricultural Engineering involves the application of engineering principles to agricultural practices. It plays a crucial role in improving the efficiency and sustainability of farming operations.</p>\n          <p>In this section, we will explore the fundamentals of agricultural engineering, its importance in agriculture, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in agricultural engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Agricultural engineering in agriculture involves designing and implementing technologies to enhance crop production, soil management, and livestock care.</p>\n\n          <h3>What is Agricultural Engineering?</h3>\n          <p>Agricultural Engineering is the discipline that focuses on the development and improvement of agricultural machinery, equipment, and processes. It includes activities such as irrigation systems design, soil management, and precision farming.</p>\n          <p>Understanding agricultural engineering is crucial for anyone looking to pursue a career in farming, agribusiness, or agricultural research. It helps in making informed decisions, managing resources effectively, and ensuring sustainable agricultural practices.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Irrigation Systems Design",
+          "description": "Designing and implementing efficient irrigation systems to optimize water use."
+        },
+        {
+          "name": "Soil Management",
+          "description": "Developing techniques to improve soil health and fertility."
+        },
+        {
+          "name": "Precision Farming",
+          "description": "Using technology to enhance crop production and reduce waste."
+        },
+        {
+          "name": "Machinery Design",
+          "description": "Designing and improving agricultural machinery and equipment."
+        },
+        {
+          "name": "Environmental Sustainability",
+          "description": "Implementing practices to minimize environmental impact and ensure long-term sustainability."
+        },
+        {
+          "name": "Project Management",
+          "description": "Managing agricultural projects to ensure they are completed on time and within budget."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Agricultural Engineer",
+          "description": "Designs and improves agricultural machinery, equipment, and processes."
+        },
+        {
+          "title": "Irrigation Engineer",
+          "description": "Designs and implements efficient irrigation systems to optimize water use."
+        },
+        {
+          "title": "Soil Scientist",
+          "description": "Develops techniques to improve soil health and fertility."
+        },
+        {
+          "title": "Precision Farming Specialist",
+          "description": "Uses technology to enhance crop production and reduce waste."
+        }
+      ]
+    },
+    {
+      "name": "Architecture",
+      "slug": "architecture",
+      "img": "architecture.jpg",
+      "description": "\n          <h2>Your journey into the world of Architectural Engineering starts here!</h2>\n          <h3>About Architectural Engineering</h3>\n          <p>Architectural Engineering involves the application of engineering principles to the design and construction of buildings. It plays a crucial role in ensuring the safety, functionality, and sustainability of built environments.</p>\n          <p>In this section, we will explore the fundamentals of architectural engineering, its importance in construction, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in architectural engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Architectural engineering in construction involves integrating engineering and architectural design to create efficient and aesthetically pleasing buildings.</p>\n\n          <h3>What is Architectural Engineering?</h3>\n          <p>Architectural Engineering is the discipline that focuses on the technical aspects of building design and construction. It includes activities such as structural engineering, building systems design, and construction management.</p>\n          <p>Understanding architectural engineering is crucial for anyone looking to pursue a career in construction, engineering, or architecture. It helps in making informed decisions, managing resources effectively, and ensuring the safety and sustainability of buildings.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Structural Engineering",
+          "description": "Designing and analyzing building structures to ensure stability and safety."
+        },
+        {
+          "name": "Building Systems Design",
+          "description": "Designing systems such as HVAC, electrical, and plumbing to ensure functionality and efficiency."
+        },
+        {
+          "name": "Construction Management",
+          "description": "Overseeing construction projects to ensure they are completed on time and within budget."
+        },
+        {
+          "name": "Sustainability",
+          "description": "Implementing sustainable design practices to minimize environmental impact."
+        },
+        {
+          "name": "Project Coordination",
+          "description": "Coordinating with architects, engineers, and contractors to ensure seamless project execution."
+        },
+        {
+          "name": "Building Codes and Regulations",
+          "description": "Ensuring compliance with building codes and regulations."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Structural Engineer",
+          "description": "Designs and analyzes building structures to ensure stability and safety."
+        },
+        {
+          "title": "Building Systems Engineer",
+          "description": "Designs HVAC, electrical, and plumbing systems to ensure functionality and efficiency."
+        },
+        {
+          "title": "Construction Manager",
+          "description": "Oversees construction projects to ensure they are completed on time and within budget."
+        },
+        {
+          "title": "Sustainability Consultant",
+          "description": "Implements sustainable design practices to minimize environmental impact."
+        }
+      ]
+    },
+    {
+      "name": "Chemical",
+      "slug": "chemical",
+      "img": "chemicals.jpg",
+      "description": "\n          <h2>Your journey into the world of Chemical Engineering starts here!</h2>\n          <h3>About Chemical Engineering</h3>\n          <p>Chemical Engineering involves the application of chemical principles to design and develop processes for manufacturing chemicals, materials, and energy. It plays a crucial role in various industries, including pharmaceuticals, petrochemicals, and environmental engineering.</p>\n          <p>In this section, we will explore the fundamentals of chemical engineering, its importance in industry, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in chemical engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Chemical engineering in industry involves designing processes to convert raw materials into valuable products efficiently and sustainably.</p>\n\n          <h3>What is Chemical Engineering?</h3>\n          <p>Chemical Engineering is the discipline that combines chemistry, physics, mathematics, and biology to design and optimize processes for producing chemicals, materials, and energy. It includes activities such as process design, reaction engineering, and materials science.</p>\n          <p>Understanding chemical engineering is crucial for anyone looking to pursue a career in manufacturing, research, or environmental engineering. It helps in making informed decisions, managing resources effectively, and ensuring sustainable practices.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Process Design",
+          "description": "Designing and optimizing chemical processes to improve efficiency and reduce costs."
+        },
+        {
+          "name": "Reaction Engineering",
+          "description": "Developing and analyzing chemical reactions to produce desired products."
+        },
+        {
+          "name": "Materials Science",
+          "description": "Studying and developing materials with specific properties for various applications."
+        },
+        {
+          "name": "Environmental Engineering",
+          "description": "Implementing practices to minimize environmental impact and ensure sustainability."
+        },
+        {
+          "name": "Safety Management",
+          "description": "Ensuring the safety of chemical processes and compliance with regulations."
+        },
+        {
+          "name": "Project Management",
+          "description": "Managing chemical engineering projects to ensure they are completed on time and within budget."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Process Engineer",
+          "description": "Designs and optimizes chemical processes to improve efficiency and reduce costs."
+        },
+        {
+          "title": "Reaction Engineer",
+          "description": "Develops and analyzes chemical reactions to produce desired products."
+        },
+        {
+          "title": "Materials Scientist",
+          "description": "Studies and develops materials with specific properties for various applications."
+        },
+        {
+          "title": "Environmental Engineer",
+          "description": "Implements practices to minimize environmental impact and ensure sustainability."
+        }
+      ]
+    },
+    {
+      "name": "Electronics and Communication",
+      "slug": "electronics and communication",
+      "img": "electro 2jpg.jpg",
+      "description": "\n          <h2>Your journey into the world of Electronics and Communication Engineering starts here!</h2>\n          <h3>About Electronics and Communication Engineering</h3>\n          <p>Electronics and Communication Engineering (ECE) involves the study and application of electronic systems and communication technologies. It plays a crucial role in modern technology, driving innovation and connectivity.</p>\n          <p>In this section, we will explore the fundamentals of ECE, its importance in industry, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in ECE or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>ECE in industry involves designing and developing electronic devices and communication systems to improve connectivity and efficiency.</p>\n\n          <h3>What is Electronics and Communication Engineering?</h3>\n          <p>Electronics and Communication Engineering is the discipline that focuses on the design, development, and application of electronic devices and communication systems. It includes activities such as circuit design, signal processing, and telecommunications.</p>\n          <p>Understanding ECE is crucial for anyone looking to pursue a career in technology, engineering, or telecommunications. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Circuit Design",
+          "description": "Designing and developing electronic circuits to meet specific requirements."
+        },
+        {
+          "name": "Signal Processing",
+          "description": "Analyzing and manipulating signals to improve communication and data transmission."
+        },
+        {
+          "name": "Telecommunications",
+          "description": "Developing and maintaining communication systems to ensure connectivity."
+        },
+        {
+          "name": "Embedded Systems",
+          "description": "Designing and programming embedded systems for various applications."
+        },
+        {
+          "name": "Network Design",
+          "description": "Creating and optimizing networks to improve data transmission and connectivity."
+        },
+        {
+          "name": "Project Management",
+          "description": "Managing ECE projects to ensure they are completed on time and within budget."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Electronics Engineer",
+          "description": "Designs and develops electronic devices and systems to meet specific requirements."
+        },
+        {
+          "title": "Communication Engineer",
+          "description": "Develops and maintains communication systems to ensure connectivity."
+        },
+        {
+          "title": "Signal Processing Engineer",
+          "description": "Analyzes and manipulates signals to improve communication and data transmission."
+        },
+        {
+          "title": "Embedded Systems Engineer",
+          "description": "Designs and programs embedded systems for various applications."
+        }
+      ]
+    },
+    {
+      "name": "Mechanical ",
+      "slug": "mechanical",
+      "img": "mechanical.jpg",
+      "description": "\n          <h2>Your journey into the world of Mechanical Engineering starts here!</h2>\n          <h3>About Mechanical Engineering</h3>\n          <p>Mechanical Engineering involves the design, analysis, and manufacturing of mechanical systems. It plays a crucial role in various industries, including automotive, aerospace, energy, and manufacturing.</p>\n          <p>In this section, we will explore the fundamentals of mechanical engineering, its importance in industry, and the various career paths available in this field.</p>\n          <p>Whether you are considering a career in mechanical engineering or simply want to understand its principles, this guide will provide you with the necessary insights.</p>\n          <p>Mechanical engineering in industry involves designing and developing mechanical systems to improve efficiency and performance.</p>\n\n          <h3>What is Mechanical Engineering?</h3>\n          <p>Mechanical Engineering is the discipline that focuses on the design, analysis, and manufacturing of mechanical systems. It includes activities such as thermodynamics, fluid mechanics, and materials science.</p>\n          <p>Understanding mechanical engineering is crucial for anyone looking to pursue a career in engineering, manufacturing, or research. It helps in making informed decisions, managing resources effectively, and driving innovation.</p>\n        ",
+      "responsibilities": [
+        {
+          "name": "Design",
+          "description": "Creating mechanical systems and components to meet specific requirements."
+        },
+        {
+          "name": "Analysis",
+          "description": "Analyzing mechanical systems to ensure they function efficiently and safely."
+        },
+        {
+          "name": "Manufacturing",
+          "description": "Developing processes to manufacture mechanical systems and components."
+        },
+        {
+          "name": "Thermodynamics",
+          "description": "Studying the principles of energy and heat transfer to improve system efficiency."
+        },
+        {
+          "name": "Fluid Mechanics",
+          "description": "Analyzing the behavior of fluids to design efficient systems."
+        },
+        {
+          "name": "Materials Science",
+          "description": "Selecting and testing materials to ensure they meet the requirements of mechanical systems."
+        }
+      ],
+      "careerPaths": [
+        {
+          "title": "Mechanical Engineer",
+          "description": "Designs and develops mechanical systems and components to meet specific requirements."
+        },
+        {
+          "title": "Manufacturing Engineer",
+          "description": "Develops processes to manufacture mechanical systems and components efficiently."
+        },
+        {
+          "title": "Thermal Engineer",
+          "description": "Studies the principles of energy and heat transfer to improve system efficiency."
+        },
+        {
+          "title": "Fluid Mechanics Engineer",
+          "description": "Analyzes the behavior of fluids to design efficient systems."
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "684cd956a7c1a9b3da2a1c4e"
+  },
+  "name": "Painting",
+  "slug": "painting",
+  "img": "painting.png",
+  "submajors": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "684ce23ef35218849f5d8cbe"
+  },
+  "name": "Mass communication",
+  "slug": "mass communication",
+  "img": "mass communication.png",
+  "submajors": [],
+  "__v": 0
+}]

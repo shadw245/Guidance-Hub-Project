@@ -1,0 +1,826 @@
+[{
+  "_id": {
+    "$oid": "6845cde379dc386bb369481d"
+  },
+  "title": "Intro to Software Development",
+  "major": "Computer Science",
+  "subMajor": "Software Development",
+  "date": "2025-06-20",
+  "time": "3:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369481e"
+  },
+  "title": "Software Testing for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Software Testing",
+  "date": "2025-06-16",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369481f"
+  },
+  "title": "Foundations of Software Testing",
+  "major": "Computer Science",
+  "subMajor": "Software Testing",
+  "date": "2025-06-21",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694820"
+  },
+  "title": "HCI for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Human-Computer Interaction (HCI)",
+  "date": "2025-06-17",
+  "time": "9:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694821"
+  },
+  "title": "Introduction to HCI",
+  "major": "Computer Science",
+  "subMajor": "Human-Computer Interaction (HCI)",
+  "date": "2025-06-22",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694822"
+  },
+  "title": "Cyber Security for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Cyber Security",
+  "date": "2025-06-18",
+  "time": "10:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694823"
+  },
+  "title": "Cyber Security Basics",
+  "major": "Computer Science",
+  "subMajor": "Cyber Security",
+  "date": "2025-06-23",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694824"
+  },
+  "title": "Information Systems for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Information Systems",
+  "date": "2025-06-19",
+  "time": "11:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694825"
+  },
+  "title": "Intro to Information Systems",
+  "major": "Computer Science",
+  "subMajor": "Information Systems",
+  "date": "2025-06-24",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694826"
+  },
+  "title": "Data Science for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "date": "2025-06-25",
+  "time": "12:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694827"
+  },
+  "title": "Intro to Data Science",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "date": "2025-06-30",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694828"
+  },
+  "title": "AI for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "date": "2025-06-26",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694829"
+  },
+  "title": "Basics of AI",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "date": "2025-07-01",
+  "time": "4:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482a"
+  },
+  "title": "IOT for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Internet of Things (IOT)",
+  "date": "2025-06-27",
+  "time": "9:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482b"
+  },
+  "title": "Intro to IOT",
+  "major": "Computer Science",
+  "subMajor": "Internet of Things (IOT)",
+  "date": "2025-07-02",
+  "time": "1:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482c"
+  },
+  "title": "Electronics & Communication for Beginners",
+  "major": "Engineering",
+  "subMajor": "Electronics & Communication",
+  "date": "2025-06-15",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482d"
+  },
+  "title": "Intro to Electronics & Communication",
+  "major": "Engineering",
+  "subMajor": "Electronics & Communication",
+  "date": "2025-06-20",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482e"
+  },
+  "title": "Architecture for Beginners",
+  "major": "Engineering",
+  "subMajor": "Architecture",
+  "date": "2025-06-16",
+  "time": "12:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369482f"
+  },
+  "title": "Intro to Architecture",
+  "major": "Engineering",
+  "subMajor": "Architecture",
+  "date": "2025-06-21",
+  "time": "2:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694830"
+  },
+  "title": "Chemicals for Beginners",
+  "major": "Engineering",
+  "subMajor": "Chemicals",
+  "date": "2025-06-17",
+  "time": "10:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694831"
+  },
+  "title": "Introduction to Chemical Engineering",
+  "major": "Engineering",
+  "subMajor": "Chemicals",
+  "date": "2025-06-22",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694832"
+  },
+  "title": "Mechanical for Beginners",
+  "major": "Engineering",
+  "subMajor": "Mechanical",
+  "date": "2025-06-18",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694833"
+  },
+  "title": "Basics of Mechanical Engineering",
+  "major": "Engineering",
+  "subMajor": "Mechanical",
+  "date": "2025-06-23",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694834"
+  },
+  "title": "Agricultural Engineering for Beginners",
+  "major": "Engineering",
+  "subMajor": "Agricultural",
+  "date": "2025-06-19",
+  "time": "9:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694835"
+  },
+  "title": "Intro to Agricultural Engineering",
+  "major": "Engineering",
+  "subMajor": "Agricultural",
+  "date": "2025-06-24",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694836"
+  },
+  "title": "Finance for Beginners",
+  "major": "Business",
+  "subMajor": "Finance",
+  "date": "2025-06-15",
+  "time": "10:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694837"
+  },
+  "title": "Intro to Finance",
+  "major": "Business",
+  "subMajor": "Finance",
+  "date": "2025-06-20",
+  "time": "3:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694838"
+  },
+  "title": "Accounting for Beginners",
+  "major": "Business",
+  "subMajor": "Accounting",
+  "date": "2025-06-16",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694839"
+  },
+  "title": "Basics of Accounting",
+  "major": "Business",
+  "subMajor": "Accounting",
+  "date": "2025-06-21",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483a"
+  },
+  "title": "Marketing for Beginners",
+  "major": "Business",
+  "subMajor": "Marketing",
+  "date": "2025-06-17",
+  "time": "12:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483b"
+  },
+  "title": "Intro to Marketing",
+  "major": "Business",
+  "subMajor": "Marketing",
+  "date": "2025-06-22",
+  "time": "2:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483c"
+  },
+  "title": "HR for Beginners",
+  "major": "Business",
+  "subMajor": "Human Resource",
+  "date": "2025-06-18",
+  "time": "1:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483d"
+  },
+  "title": "Intro to Human Resources",
+  "major": "Business",
+  "subMajor": "Human Resource",
+  "date": "2025-06-23",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483e"
+  },
+  "title": "Entrepreneurship for Beginners",
+  "major": "Business",
+  "subMajor": "Entrepreneurship",
+  "date": "2025-06-19",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb369483f"
+  },
+  "title": "Startup Basics",
+  "major": "Business",
+  "subMajor": "Entrepreneurship",
+  "date": "2025-06-24",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694840"
+  },
+  "title": "Supply Chain for Beginners",
+  "major": "Business",
+  "subMajor": "Supply Chain Management",
+  "date": "2025-06-25",
+  "time": "9:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6845cde379dc386bb3694841"
+  },
+  "title": "Intro to Supply Chain",
+  "major": "Business",
+  "subMajor": "Supply Chain Management",
+  "date": "2025-06-30",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "68471671bb527be4ca8b5483"
+  },
+  "title": "intro to cs",
+  "date": "12-7-2025",
+  "time": "6:10",
+  "major": "Computer Science",
+  "subMajor": "AI",
+  "status": "not booked",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7a"
+  },
+  "title": "Intro to Software Development",
+  "major": "Computer Science",
+  "subMajor": "Software Development",
+  "date": "2025-06-20",
+  "time": "3:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7b"
+  },
+  "title": "Software Testing for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Software Testing",
+  "date": "2025-06-16",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7c"
+  },
+  "title": "Foundations of Software Testing",
+  "major": "Computer Science",
+  "subMajor": "Software Testing",
+  "date": "2025-06-21",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7d"
+  },
+  "title": "HCI for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Human-Computer Interaction (HCI)",
+  "date": "2025-06-17",
+  "time": "9:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7e"
+  },
+  "title": "Introduction to HCI",
+  "major": "Computer Science",
+  "subMajor": "Human-Computer Interaction (HCI)",
+  "date": "2025-06-22",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f7f"
+  },
+  "title": "Cyber Security for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Cyber Security",
+  "date": "2025-06-18",
+  "time": "10:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f80"
+  },
+  "title": "Cyber Security Basics",
+  "major": "Computer Science",
+  "subMajor": "Cyber Security",
+  "date": "2025-06-23",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f81"
+  },
+  "title": "Information Systems for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Information Systems",
+  "date": "2025-06-19",
+  "time": "11:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f82"
+  },
+  "title": "Intro to Information Systems",
+  "major": "Computer Science",
+  "subMajor": "Information Systems",
+  "date": "2025-06-24",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f83"
+  },
+  "title": "Data Science for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "date": "2025-06-25",
+  "time": "12:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f84"
+  },
+  "title": "Intro to Data Science",
+  "major": "Computer Science",
+  "subMajor": "Data Science",
+  "date": "2025-06-30",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f85"
+  },
+  "title": "AI for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "date": "2025-06-26",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f86"
+  },
+  "title": "Basics of AI",
+  "major": "Computer Science",
+  "subMajor": "Artificial Intelligence",
+  "date": "2025-07-01",
+  "time": "4:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f87"
+  },
+  "title": "IOT for Beginners",
+  "major": "Computer Science",
+  "subMajor": "Internet of Things (IOT)",
+  "date": "2025-06-27",
+  "time": "9:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f88"
+  },
+  "title": "Intro to IOT",
+  "major": "Computer Science",
+  "subMajor": "Internet of Things (IOT)",
+  "date": "2025-07-02",
+  "time": "1:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f89"
+  },
+  "title": "Electronics & Communication for Beginners",
+  "major": "Engineering",
+  "subMajor": "Electronics & Communication",
+  "date": "2025-06-15",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8a"
+  },
+  "title": "Intro to Electronics & Communication",
+  "major": "Engineering",
+  "subMajor": "Electronics & Communication",
+  "date": "2025-06-20",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8b"
+  },
+  "title": "Architecture for Beginners",
+  "major": "Engineering",
+  "subMajor": "Architecture",
+  "date": "2025-06-16",
+  "time": "12:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8c"
+  },
+  "title": "Intro to Architecture",
+  "major": "Engineering",
+  "subMajor": "Architecture",
+  "date": "2025-06-21",
+  "time": "2:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8d"
+  },
+  "title": "Chemicals for Beginners",
+  "major": "Engineering",
+  "subMajor": "Chemicals",
+  "date": "2025-06-17",
+  "time": "10:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8e"
+  },
+  "title": "Introduction to Chemical Engineering",
+  "major": "Engineering",
+  "subMajor": "Chemicals",
+  "date": "2025-06-22",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f8f"
+  },
+  "title": "Mechanical for Beginners",
+  "major": "Engineering",
+  "subMajor": "Mechanical",
+  "date": "2025-06-18",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f90"
+  },
+  "title": "Basics of Mechanical Engineering",
+  "major": "Engineering",
+  "subMajor": "Mechanical",
+  "date": "2025-06-23",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f91"
+  },
+  "title": "Agricultural Engineering for Beginners",
+  "major": "Engineering",
+  "subMajor": "Agricultural",
+  "date": "2025-06-19",
+  "time": "9:30 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f92"
+  },
+  "title": "Intro to Agricultural Engineering",
+  "major": "Engineering",
+  "subMajor": "Agricultural",
+  "date": "2025-06-24",
+  "time": "2:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f93"
+  },
+  "title": "Finance for Beginners",
+  "major": "Business",
+  "subMajor": "Finance",
+  "date": "2025-06-15",
+  "time": "10:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f94"
+  },
+  "title": "Intro to Finance",
+  "major": "Business",
+  "subMajor": "Finance",
+  "date": "2025-06-20",
+  "time": "3:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f95"
+  },
+  "title": "Accounting for Beginners",
+  "major": "Business",
+  "subMajor": "Accounting",
+  "date": "2025-06-16",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f96"
+  },
+  "title": "Basics of Accounting",
+  "major": "Business",
+  "subMajor": "Accounting",
+  "date": "2025-06-21",
+  "time": "4:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f97"
+  },
+  "title": "Marketing for Beginners",
+  "major": "Business",
+  "subMajor": "Marketing",
+  "date": "2025-06-17",
+  "time": "12:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f98"
+  },
+  "title": "Intro to Marketing",
+  "major": "Business",
+  "subMajor": "Marketing",
+  "date": "2025-06-22",
+  "time": "2:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f99"
+  },
+  "title": "HR for Beginners",
+  "major": "Business",
+  "subMajor": "Human Resource",
+  "date": "2025-06-18",
+  "time": "1:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f9a"
+  },
+  "title": "Intro to Human Resources",
+  "major": "Business",
+  "subMajor": "Human Resource",
+  "date": "2025-06-23",
+  "time": "3:30 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f9b"
+  },
+  "title": "Entrepreneurship for Beginners",
+  "major": "Business",
+  "subMajor": "Entrepreneurship",
+  "date": "2025-06-19",
+  "time": "11:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f9c"
+  },
+  "title": "Startup Basics",
+  "major": "Business",
+  "subMajor": "Entrepreneurship",
+  "date": "2025-06-24",
+  "time": "5:00 PM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f9d"
+  },
+  "title": "Supply Chain for Beginners",
+  "major": "Business",
+  "subMajor": "Supply Chain Management",
+  "date": "2025-06-25",
+  "time": "9:00 AM",
+  "status": "Not Booked"
+},
+{
+  "_id": {
+    "$oid": "6849e39df6f76d7556635f9e"
+  },
+  "title": "Intro to Supply Chain",
+  "major": "Business",
+  "subMajor": "Supply Chain Management",
+  "date": "2025-06-30",
+  "time": "1:00 PM",
+  "status": "Not Booked"
+}]

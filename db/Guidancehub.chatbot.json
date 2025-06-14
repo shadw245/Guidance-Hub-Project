@@ -1,0 +1,343 @@
+[{
+  "_id": {
+    "$oid": "684c7201cb9d99830c5f24a0"
+  },
+  "patterns": [
+    "hello",
+    "hi",
+    "hey"
+  ],
+  "reply": "Hello! How can I help you today?"
+},
+{
+  "_id": {
+    "$oid": "684c730bcb9d99830c5f24a2"
+  },
+  "patterns": [
+    "major",
+    "majors",
+    "major options",
+    "what majors"
+  ],
+  "reply": "We offer majors in Accounting, Information Systems, IOT, Marketing, and more. Which one are you interested in?"
+},
+{
+  "_id": {
+    "$oid": "684c76eecb9d99830c5f24a4"
+  },
+  "patterns": [
+    "accounting",
+    "tell me about accounting",
+    "what is accounting"
+  ],
+  "reply": "Accounting is the process of recording financial transactions. Our Accounting major prepares you for careers in auditing, tax, and finance."
+},
+{
+  "_id": {
+    "$oid": "684c7703cb9d99830c5f24a6"
+  },
+  "patterns": [
+    "agricultural",
+    "agriculture",
+    "what is agricultural",
+    "agricultural major"
+  ],
+  "reply": "The Agricultural major focuses on modern farming, food production, and sustainability. Learn about crop science, agribusiness, and more."
+},
+{
+  "_id": {
+    "$oid": "684c772bcb9d99830c5f24a8"
+  },
+  "patterns": [
+    "architecture",
+    "what is architecture",
+    "architecture major"
+  ],
+  "reply": "Architecture is the art and science of designing buildings. Our Architecture major covers design, engineering, and urban planning."
+},
+{
+  "_id": {
+    "$oid": "684c7768cb9d99830c5f24aa"
+  },
+  "patterns": [
+    "artificial intelligence",
+    "ai",
+    "what is artificial intelligence"
+  ],
+  "reply": "Artificial Intelligence (AI) is about creating smart machines. Our AI major covers machine learning, robotics, and data science."
+},
+{
+  "_id": {
+    "$oid": "684c777acb9d99830c5f24ac"
+  },
+  "patterns": [
+    "business",
+    "business major",
+    "what is business"
+  ],
+  "reply": "The Business major teaches management, marketing, finance, and entrepreneurship skills for a variety of industries."
+},
+{
+  "_id": {
+    "$oid": "684c77aacb9d99830c5f24ae"
+  },
+  "patterns": [
+    "chemical",
+    "chemical engineering",
+    "what is chemical engineering"
+  ],
+  "reply": "Chemical Engineering combines chemistry, physics, and math to solve problems involving chemicals, fuel, drugs, and food."
+},
+{
+  "_id": {
+    "$oid": "684c77bccb9d99830c5f24b0"
+  },
+  "patterns": [
+    "computer science",
+    "cs",
+    "what is computer science"
+  ],
+  "reply": "Computer Science is the study of computers and computational systems. Learn programming, algorithms, and software development."
+},
+{
+  "_id": {
+    "$oid": "684c77d7cb9d99830c5f24b2"
+  },
+  "patterns": [
+    "cyber security",
+    "cybersecurity",
+    "what is cyber security"
+  ],
+  "reply": "Cyber Security focuses on protecting systems and data from cyber threats. Learn about network security, cryptography, and ethical hacking."
+},
+{
+  "_id": {
+    "$oid": "684c783dcb9d99830c5f24b4"
+  },
+  "patterns": [
+    "data science",
+    "what is data science",
+    "data science major"
+  ],
+  "reply": "Data Science is about extracting insights from data. Our major covers statistics, machine learning, and big data technologies."
+},
+{
+  "_id": {
+    "$oid": "684c7863cb9d99830c5f24b6"
+  },
+  "patterns": [
+    "engineering",
+    "what is engineering",
+    "engineering major"
+  ],
+  "reply": "Engineering applies science and math to solve real-world problems. We offer various engineering majors including mechanical, electrical, and civil."
+},
+{
+  "_id": {
+    "$oid": "684c7875cb9d99830c5f24b8"
+  },
+  "patterns": [
+    "finance",
+    "finance major",
+    "what is finance"
+  ],
+  "reply": "Finance is the study of money management. Our major covers investment, banking, and financial analysis."
+},
+{
+  "_id": {
+    "$oid": "684c7886cb9d99830c5f24ba"
+  },
+  "patterns": [
+    "hci",
+    "human computer interaction",
+    "what is hci"
+  ],
+  "reply": "Human-Computer Interaction (HCI) focuses on designing user-friendly interfaces and improving user experience with technology."
+},
+{
+  "_id": {
+    "$oid": "684c7894cb9d99830c5f24bc"
+  },
+  "patterns": [
+    "human resources",
+    "hr",
+    "what is human resources"
+  ],
+  "reply": "Human Resources (HR) is about managing people in organizations. Learn about recruitment, training, and employee relations."
+},
+{
+  "_id": {
+    "$oid": "684c78a7cb9d99830c5f24be"
+  },
+  "patterns": [
+    "information systems",
+    "is",
+    "what is information systems"
+  ],
+  "reply": "Information Systems combines business and technology to manage information. Learn about databases, systems analysis, and IT management."
+},
+{
+  "_id": {
+    "$oid": "684c78e3cb9d99830c5f24c1"
+  },
+  "patterns": [
+    "iot",
+    "internet of things",
+    "what is iot"
+  ],
+  "reply": "The Internet of Things (IoT) connects devices to the internet. Our IoT major covers sensors, networks, and smart systems."
+},
+{
+  "_id": {
+    "$oid": "684c78efcb9d99830c5f24c3"
+  },
+  "patterns": [
+    "login",
+    "how do i login",
+    "login help"
+  ],
+  "reply": "To login, click the login button on the top right and enter your credentials. If you forgot your password, use the reset link."
+},
+{
+  "_id": {
+    "$oid": "684c7905cb9d99830c5f24c5"
+  },
+  "patterns": [
+    "majors",
+    "major options",
+    "what majors are available"
+  ],
+  "reply": "We offer majors in Accounting, Information Systems, IOT, Marketing, and many more. Which one are you interested in?"
+},
+{
+  "_id": {
+    "$oid": "684c79ddcb9d99830c5f24c7"
+  },
+  "patterns": [
+    "marketing",
+    "marketing major",
+    "what is marketing"
+  ],
+  "reply": "Marketing is about promoting and selling products or services. Learn about advertising, market research, and digital marketing."
+},
+{
+  "_id": {
+    "$oid": "684c79eecb9d99830c5f24c9"
+  },
+  "patterns": [
+    "mechanical",
+    "mechanical engineering",
+    "what is mechanical engineering"
+  ],
+  "reply": "Mechanical Engineering deals with the design and manufacturing of machines. Learn about thermodynamics, robotics, and CAD."
+},
+{
+  "_id": {
+    "$oid": "684c7ae1cb9d99830c5f24cd"
+  },
+  "patterns": [
+    "software development",
+    "software dev",
+    "what is software development"
+  ],
+  "reply": "Software Development is about creating applications and systems. Learn programming, software design, and project management."
+},
+{
+  "_id": {
+    "$oid": "684c7af6cb9d99830c5f24cf"
+  },
+  "patterns": [
+    "software testing",
+    "what is software testing",
+    "testing major"
+  ],
+  "reply": "Software Testing ensures software quality and reliability. Learn about test automation, QA processes, and bug tracking."
+},
+{
+  "_id": {
+    "$oid": "684c7b08cb9d99830c5f24d1"
+  },
+  "patterns": [
+    "supply chain",
+    "supply chain management",
+    "what is supply chain"
+  ],
+  "reply": "Supply Chain Management is about overseeing the flow of goods and services. Learn about logistics, procurement, and operations."
+},
+{
+  "_id": {
+    "$oid": "684c7bcdcb9d99830c5f24d3"
+  },
+  "patterns": [
+    "mentorship",
+    "mentorships",
+    "mentor",
+    "how do I get a mentor",
+    "find a mentor",
+    "what are the available mentorships ?"
+  ],
+  "reply": "Our mentorship program connects students with experienced mentors. You can apply for mentorships on the Mentorships page."
+},
+{
+  "_id": {
+    "$oid": "684c7cb8cb9d99830c5f24db"
+  },
+  "patterns": [
+    "how do I login",
+    "login help",
+    "can't login",
+    "forgot password",
+    "reset password"
+  ],
+  "reply": "To login, click the login button at the top right and enter your credentials. If you forgot your password, use the 'Forgot Password' link to reset it."
+},
+{
+  "_id": {
+    "$oid": "684c7ccccb9d99830c5f24dd"
+  },
+  "patterns": [
+    "how do I register",
+    "sign up",
+    "create account",
+    "register"
+  ],
+  "reply": "To register, click the 'Sign Up' or 'Register' button and fill in your details. You will receive a confirmation email after registration."
+},
+{
+  "_id": {
+    "$oid": "684c7ce9cb9d99830c5f24df"
+  },
+  "patterns": [
+    "fees",
+    "tuition",
+    "cost",
+    "how much does it cost",
+    "payment"
+  ],
+  "reply": "Tuition fees vary by program. Please visit the Fees page for detailed information or contact our admissions office."
+},
+{
+  "_id": {
+    "$oid": "684c7d20cb9d99830c5f24e5"
+  },
+  "patterns": [
+    "courses",
+    "subjects",
+    "classes",
+    "what courses are available"
+  ],
+  "reply": "You can view all available courses and subjects on the Courses page. Let us know if you need help choosing a course!"
+},
+{
+  "_id": {
+    "$oid": "684c8899cb9d99830c5f24f5"
+  },
+  "patterns": [
+    "internship",
+    "internships",
+    "how do i get an internship",
+    "find an internship",
+    "apply for internship"
+  ],
+  "reply": "We offer various internships in different fields. Visit the Internships page to browse and apply for available positions."
+}]
