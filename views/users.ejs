@@ -1,0 +1,139 @@
+<!-- Users Management Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management</title>
+    <link rel="stylesheet" href="/css/styling.css">
+    <script src="/js/users.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <div class="users-container">
+        <div class="users-header">
+            <h1>Users Management</h1>
+            <button class="add-user-btn" onclick="showAddUserForm()">
+                <span class="material-icons">person_add</span>
+                Add User
+            </button>
+        </div>
+
+        <div class="table-container">
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% users.forEach(function(user) { %>
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <span class="material-icons">person</span>
+                                    <%= user.name %>
+                                </div>
+                            </td>
+                            <td><%= user.email %></td>
+                            <td><%= user.gender %></td>
+                            <td>
+                                <% if(user.isAdmin && user.isInstructor) { %>
+                                    <span class="role-badge combined">Admin/Instructor</span>
+                                <% } else if(user.isAdmin) { %>
+                                    <span class="role-badge admin">Admin</span>
+                                <% } else if(user.isInstructor) { %>
+                                    <span class="role-badge instructor">Instructor</span>
+                                <% } else { %>
+                                    <span class="role-badge user">User</span>
+                                <% } %>
+                            </td>
+                            <td>
+                                <div class="action-buttons">
+                                    <button class="edit-btn" onclick="editUser('<%= user._id %>')">
+                                        <span class="material-icons">edit</span>
+                                    </button>
+                                    <button class="delete-btn" onclick="deleteUser('<%= user._id %>')">
+                                        <span class="material-icons">delete</span>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Modern Modal Form -->
+        <div id="userFormContainer" class="modal" style="display:none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Add New User</h2>
+                    <span class="material-icons close-btn" onclick="hideUserForm()">close</span>
+                </div>
+                <form id="userForm" class="user-form">
+                    <input type="hidden" name="_id" id="userId">
+                    
+                    <div class="form-group">
+                        <label for="userName">Name</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">person</span>
+                            <input type="text" name="name" id="userName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Email</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">email</span>
+                            <input type="email" name="email" id="userEmail" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPassword">Password</label>
+                        <div class="input-with-icon">
+                            <span class="material-icons">lock</span>
+                            <input type="password" name="password" id="userPassword">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userGender">Gender</label>
+                        <select name="gender" id="userGender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userRole">Role</label>
+                        <select name="role" id="userRole">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="isInstructor">Instructor Status</label>
+                        <select name="isInstructor" id="userIsInstructor">
+                            <option value="false">Not Instructor</option>
+                            <option value="true">Instructor</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn" onclick="hideUserForm()">Cancel</button>
+                        <button type="submit" class="save-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
