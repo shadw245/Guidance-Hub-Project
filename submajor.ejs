@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= submajor.name %></title>
+    <link rel="stylesheet" href="/css/styling.css"> 
+    <script src="/js/javascript.js"></script>
+</head>
+<body>
+
+   <%- include('partials/nav') %>
+
+    <div id="career-links">
+        <a href="#description">Description</a>
+        <a href="#career-paths">Career Paths</a>
+        <a href="#internship">Internship</a>
+        <a href="#mentorship">Mentorship</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description-container">
+        <div class="description" id="description">
+            <div>
+            <%- submajor.description %>
+            <h3>Key Responsibilities</h3>
+            <ul>
+                <% submajor.responsibilities.forEach(res => { %>
+                    <li><b><%= res.name %></b>: <%= res.description %></li>
+                <% }) %>
+            </ul>
+        </div>
+
+        <!-- Career Paths Section -->
+        <div class="careers" id="career-paths">
+            <h2>Career Paths</h2>
+            <div class="career-container">
+                <% submajor.careerPaths.forEach(path => { %>
+                    <div class="career-card">
+                        <h3><%= path.title %></h3><hr>
+                        <p><%= path.description %></p>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+    
+
+    <!-- Internship Section -->
+    <div class="internships" id="internship">
+        <h2>Internship Opportunities</h2>
+        <button id="openInternships" onclick="window.location.href='/internships'">View Internships</button>
+        <div class="hidden" id="internshipList"></div>
+    </div>
+
+    <!-- Mentorship Section -->
+    <div class="mentorship" id="mentorship">
+        <h2>Mentorship Program</h2>
+        <button id="openMentorship" onclick="window.location.href='/mentorships'">Join Our Mentorship Program</button>
+    </div>
+</div>
+</div>
+
+<a href="/chatbot" class="chatbot-btn">
+    <span>💬</span> Chatbot
+</a>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
