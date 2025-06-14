@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorships</title>
+    <link rel="stylesheet" href="/css/styling.css">
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+
+    <div class="filter-container">
+        <div class="filter-group">
+            <label for="majorSelect">Select Major:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('majorDropdownContent')">Select Major</button>
+                <div id="majorDropdownContent" class="dropdown-content">
+                    <div onclick="selectMajor('All')">All</div>
+                    <div onclick="selectMajor('Computer Science')">Computer Science</div>
+                    <div onclick="selectMajor('Engineering')">Engineering</div>
+                    <div onclick="selectMajor('Business')">Business</div>
+                </div>
+                <input type="hidden" id="majorSelect" value="All">
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <label for="subMajorSelect">Select Sub-Major:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('dropdownContent')">Select Sub-Major</button>
+                <div id="dropdownContent" class="dropdown-content"></div>
+                <input type="hidden" id="subMajorSelect" value="All">
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <label for="statusSelect">Select Status:</label>
+            <div class="custom-dropdown">
+                <button class="dropbtn" onclick="toggleDropdown('statusDropdownContent')">Select Status</button>
+                <div id="statusDropdownContent" class="dropdown-content">
+                    <div onclick="selectStatus('All')">All</div>
+                    <div onclick="selectStatus('Booked')">Booked</div>
+                    <div onclick="selectStatus('Not Booked')">Not Booked</div>
+                </div>
+                <input type="hidden" id="statusSelect" value="All">
+            </div>
+        </div>
+    </div>    <% if (user && (user.isAdmin || user.isInstructor)) { %>
+        <div class="add-mentorship-section">
+            <h3>Add New Mentorship</h3>
+            <form id="addMentorshipForm" enctype="multipart/form-data">
+                <input type="text" id="title" placeholder="Title" required>
+                <select id="major" required>
+                    <option value="">Select Major</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Business">Business</option>
+                </select>
+                <select id="subMajor" required>
+                    <option value="">Select Sub-Major</option>
+                </select>
+                <input type="date" id="date" required>
+                <input type="time" id="time" required>
+                <div class="file-upload-section">
+                    <label for="document">Upload Document (optional):</label>
+                    <input type="file" id="document" name="document" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg">
+                    <small>Supported: PDF, DOC, DOCX, TXT, PNG, JPG, JPEG (Max 5MB)</small>
+                </div>
+                <button type="submit">Add Mentorship</button>
+            </form>
+        </div>
+    <% } %>
+
+    <div class="course-list" id="courseList">
+        <% if (typeof mentorships !== 'undefined' && mentorships.length > 0) { %>
+            <% mentorships.forEach(function(mentorship) { %>                <div class="course-card" data-major="<%= mentorship.major %>" data-sub-major="<%= mentorship.subMajor %>" data-user-status="<%= mentorship.userStatus %>">
+                    <img src="/pics/user.png" alt="image">
+                    <h5><%= mentorship.title %></h5>
+                    <p><%= mentorship.date %>, <%= mentorship.time %></p>
+                    
+                    <% if (mentorship.documentName) { %>
+                        <div class="document-section">
+                            <p><strong>Document:</strong> <%= mentorship.documentName %></p>
+                            <button class="download-button" onclick="downloadDocument('<%= mentorship._id %>')">
+                                📄 Download Document
+                            </button>
+                        </div>
+                    <% } %>
+                    
+                    <% if (user && (user.isAdmin || user.isInstructor)) { %>
+                        <div class="admin-controls">
+                            <button class="delete-button" onclick="deleteMentorship('<%= mentorship._id %>')">Delete</button>
+                        </div>                    <% } %><% if (mentorship.userStatus === 'Not Booked') { %>
+                        <button class="book-button available-button" onclick="handleBooking('<%= mentorship._id %>')">Book Now</button>
+                    <% } else if (mentorship.userStatus === 'Booked') { %>
+                        <button class="cancel-button" onclick="handleCancellation('<%= mentorship._id %>')">Cancel Booking</button>
+                    <% } %>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No mentorships available at the moment.</p>
+    <% } %>
+    </div>
+
+    <style>        .add-mentorship-section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .add-mentorship-section form {
+            display: grid;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .add-mentorship-section input,
+        .add-mentorship-section select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .file-upload-section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .file-upload-section input[type="file"] {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #f9f9f9;
+        }
+
+        .file-upload-section small {
+            color: #666;
+            font-size: 12px;
+        }
+
+        .document-section {
+            background: #f0f8ff;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        .download-button {
+            background: #2196F3;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .download-button:hover {
+            background: #1976D2;
+        }
+
+        .add-mentorship-section button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .add-mentorship-section button:hover {
+            background: #45a049;
+        }
+
+        .delete-button {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .delete-button:hover {
+            background: #cc0000;
+        }
+
+        /* Add this to your existing styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .close {
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .admin-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .edit-button {
+            background: #2196F3;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .edit-button:hover {
+            background: #1976D2;
+        }
+    </style>
+
+    <script>
+        // Instructor functions
+        document.addEventListener('DOMContentLoaded', function() {
+            const majorSelect = document.getElementById('major');
+            const subMajorSelect = document.getElementById('subMajor');
+            const addForm = document.getElementById('addMentorshipForm');
+            const editForm = document.getElementById('editMentorshipForm');
+
+            if (majorSelect) {
+                majorSelect.addEventListener('change', function() {
+                    const major = this.value;
+                    updateSubMajorOptions(major, subMajorSelect);
+                });
+            }
+
+            if (addForm) {
+                addForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    addMentorship();
+                });
+            }
+
+            if (editForm) {
+                editForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    updateMentorship();
+                });
+            }
+        });
+
+        function updateSubMajorOptions(major, select) {
+            select.innerHTML = '<option value="">Select Sub-Major</option>';
+            
+            const subMajors = {
+                'Computer Science': ['Software Development', 'Software Testing', 'Cyber Security', 
+                                   'Data Science', 'Artificial Intelligence', 'HCI', 'Information Systems', 'IOT'],
+                'Engineering': ['Mechanical', 'Chemical', 'Electrical', 'Civil', 'Agricultural'],
+                'Business': ['Marketing', 'Finance', 'Human Resources', 'Supply Chain', 'Entrepreneurship']
+            };
+
+            if (major && subMajors[major]) {
+                subMajors[major].forEach(subMajor => {
+                    const option = document.createElement('option');
+                    option.value = subMajor;
+                    option.textContent = subMajor;
+                    select.appendChild(option);
+                });
+            }
+        }        async function addMentorship() {
+            const title = document.getElementById('title').value;
+            const major = document.getElementById('major').value;
+            const subMajor = document.getElementById('subMajor').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const documentFile = document.getElementById('document').files[0];
+
+            // Create FormData to handle file upload
+            const formData = new FormData();
+            formData.append('title', title);
+            formData.append('major', major);
+            formData.append('subMajor', subMajor);
+            formData.append('date', date);
+            formData.append('time', time);
+            
+            if (documentFile) {
+                formData.append('document', documentFile);
+            }
+
+            try {
+                const response = await fetch('/mentorships/add', {
+                    method: 'POST',
+                    body: formData // Don't set Content-Type header, let browser set it with boundary
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    alert('Mentorship added successfully!');
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to add mentorship');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while adding the mentorship');
+            }
+        }
+
+        function downloadDocument(mentorshipId) {
+            window.location.href = `/mentorships/download/${mentorshipId}`;
+        }
+
+        async function deleteMentorship(mentorshipId) {
+            if (!confirm('Are you sure you want to delete this mentorship?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`/mentorships/${mentorshipId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to delete mentorship');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while deleting the mentorship');
+            }
+        }
+
+        function showEditForm(mentorship) {
+            const parsedMentorship = JSON.parse(mentorship);
+            document.getElementById('editMentorshipId').value = parsedMentorship._id;
+            document.getElementById('editTitle').value = parsedMentorship.title;
+            document.getElementById('editMajor').value = parsedMentorship.major;
+            document.getElementById('editDate').value = parsedMentorship.date;
+            document.getElementById('editTime').value = parsedMentorship.time;
+
+            const editSubMajorSelect = document.getElementById('editSubMajor');
+            updateSubMajorOptions(parsedMentorship.major, editSubMajorSelect);
+            editSubMajorSelect.value = parsedMentorship.subMajor;
+
+            document.getElementById('editModal').style.display = 'block';
+        }
+
+        function closeEditForm() {
+            document.getElementById('editModal').style.display = 'none';
+        }
+
+        async function updateMentorship() {
+            const id = document.getElementById('editMentorshipId').value;
+            const title = document.getElementById('editTitle').value;
+            const major = document.getElementById('editMajor').value;
+            const subMajor = document.getElementById('editSubMajor').value;
+            const date = document.getElementById('editDate').value;
+            const time = document.getElementById('editTime').value;
+
+            try {
+                const response = await fetch(`/mentorships/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ title, major, subMajor, date, time })
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to update mentorship');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while updating the mentorship');
+            }
+        }
+
+        // Filter functions
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function selectMajor(value) {
+            document.getElementById('majorSelect').value = value;
+            document.querySelector('button.dropbtn').textContent = value;
+            document.getElementById('majorDropdownContent').style.display = 'none';
+            updateSubMajors(value);
+            filterMentorships();
+        }
+
+        function updateSubMajors(major) {
+            const subMajorDropdown = document.getElementById('dropdownContent');
+            subMajorDropdown.innerHTML = '<div onclick="selectSubMajor(\'All\')">All</div>';
+            
+            if (major === 'Computer Science') {
+                const subMajors = ['Software Development', 'Software Testing', 'Cyber Security', 
+                                 'Data Science', 'Artificial Intelligence', 'HCI', 'Information Systems', 'IOT'];
+                subMajors.forEach(sub => {
+                    subMajorDropdown.innerHTML += `<div onclick="selectSubMajor('${sub}')">${sub}</div>`;
+                });
+            } else if (major === 'Engineering') {
+                const subMajors = ['Mechanical', 'Chemical', 'Electrical', 'Civil', 'Agricultural'];
+                subMajors.forEach(sub => {
+                    subMajorDropdown.innerHTML += `<div onclick="selectSubMajor('${sub}')">${sub}</div>`;
+                });
+            } else if (major === 'Business') {
+                const subMajors = ['Marketing', 'Finance', 'Human Resources', 'Supply Chain', 'Entrepreneurship'];
+                subMajors.forEach(sub => {
+                    subMajorDropdown.innerHTML += `<div onclick="selectSubMajor('${sub}')">${sub}</div>`;
+                });
+            }
+        }
+
+        function selectSubMajor(value) {
+            document.getElementById('subMajorSelect').value = value;
+            document.querySelectorAll('.dropbtn')[1].textContent = value;
+            document.getElementById('dropdownContent').style.display = 'none';
+            filterMentorships();
+        }
+
+        function selectStatus(value) {
+            document.getElementById('statusSelect').value = value;
+            document.querySelectorAll('.dropbtn')[2].textContent = value;
+            document.getElementById('statusDropdownContent').style.display = 'none';
+            filterMentorships();
+        }        function filterMentorships() {
+            const major = document.getElementById('majorSelect').value;
+            const subMajor = document.getElementById('subMajorSelect').value;
+            const status = document.getElementById('statusSelect').value;
+            
+            const cards = document.querySelectorAll('.course-card');
+              cards.forEach(card => {
+                const cardMajor = card.getAttribute('data-major');
+                const cardSubMajor = card.getAttribute('data-sub-major');
+                const cardStatus = card.getAttribute('data-user-status');
+                
+                let show = true;
+                
+                // Check major filter
+                if (major !== 'All' && cardMajor !== major) {
+                    show = false;
+                }
+                
+                // Check sub-major filter
+                if (subMajor !== 'All' && cardSubMajor !== subMajor) {
+                    show = false;
+                }
+                
+                // Check status filter
+                if (status !== 'All' && cardStatus !== status) {
+                    show = false;
+                }
+                
+                card.style.display = show ? 'block' : 'none';
+            });
+        }
+
+        // Booking functions
+        function handleBooking(mentorshipId) {
+            fetch(`/mentorships/${mentorshipId}/book`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to book mentorship');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while booking the mentorship');
+            });
+        }
+
+        function handleCancellation(mentorshipId) {
+            fetch(`/mentorships/${mentorshipId}/cancel`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to cancel booking');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while canceling the booking');
+            });        }
+
+        // Initialize filters and forms when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Reset filters to default state
+            document.getElementById('majorSelect').value = 'All';
+            document.getElementById('subMajorSelect').value = 'All';
+            document.getElementById('statusSelect').value = 'All';
+            
+            // Update dropdown button text
+            document.querySelectorAll('.dropbtn')[0].textContent = 'All';
+            document.querySelectorAll('.dropbtn')[1].textContent = 'All';
+            document.querySelectorAll('.dropbtn')[2].textContent = 'All';
+              // Initial filter
+            filterMentorships();
+
+            // Set up edit form submission
+            const editForm = document.getElementById('editMentorshipForm');
+            if (editForm) {
+                editForm.addEventListener('submit', editMentorship);
+            }
+
+            // Set up edit major dropdown change handler
+            const editMajorSelect = document.getElementById('editMajor');
+            if (editMajorSelect) {
+                editMajorSelect.addEventListener('change', function() {
+                    updateSubMajorOptions(this.value, document.getElementById('editSubMajor'));
+                });
+            }
+        });
+    </script>
+</body>
+</html>

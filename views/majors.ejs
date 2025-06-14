@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majors</title>
+    <link rel="stylesheet" href="/css/styling.css">
+    <script src="/js/javascript.js"></script>
+
+</head>
+<body>
+   
+ <%- include('partials/nav') %>
+    <input type="text" id="searchBox" placeholder="Search Majors..." onkeyup="searchMajors()">
+        <% if (user && (user.isAdmin || user.isInstructor)) { %>
+    <div class="admin-controls">
+        <button onclick="showAddMajorForm()" class="add-btn">Add New Major</button>
+    </div> <% } %>
+
+    
+
+   <div id="addMajorForm" class="add-form" style="display: none;">
+  <h3>Add New Major</h3>
+ <form onsubmit="addMajor(event)" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="majorName">Major Name:</label>
+      <input type="text" id="majorName" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="majorSlug">Slug:</label>
+      <input type="text" id="majorSlug" name="slug" required>
+    </div>
+    <div class="form-group">
+      <label for="majorImg"> Upload Image:</label>   
+      <input type="file" id="majorImg" name="img" accept=".png,.jpg,.jpeg" required>
+      <small>Supported: PNG, JPG, JPEG (Max 5MB)</small>
+
+    </div>
+    
+    <hr>
+    <h4>Submajors</h4>
+    <div id="submajorsContainer">
+      <!-- Submajor block will be cloned here -->
+    </div>
+
+    <button type="button" onclick="addSubmajor()">+ Add Submajor</button>
+
+    <div class="form-buttons">
+      <button type="submit">Add Major</button>
+      <button type="button" onclick="hideAddMajorForm()">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<!-- Template for submajor fields -->
+<template id="submajorTemplate">
+  <div class="submajor-block">
+    <hr>
+    <h5>Submajor <span class="submajor-index"></span></h5>
+    <div class="form-group">
+      <label>Name:</label>
+      <input type="text" required>
+    </div>
+    <div class="form-group">
+      <label>Slug:</label>
+      <input type="text" required>
+    </div>
+    <div class="form-group">
+      <label>Upload Image:</label>
+      <input type="file" accept=".png,.jpg,.jpeg" required>
+      <small>Supported: PNG, JPG, JPEG (Max 5MB)</small>
+    </div>
+    <div class="form-group">
+      <label>About</label>
+      <textarea required></textarea>
+    </div>
+    <div class="form-group">
+      <label>Overview(What is):</label>
+      <textarea required></textarea>
+    </div>
+    <div class="form-group">
+      <label>Responsibilities (name:desc, name:desc):</label>
+      <input type="text">
+    </div>
+    <div class="form-group">
+      <label>Career Paths (title:desc, title:desc):</label>
+      <input type="text">
+    </div>
+    <button type="button" onclick="removeSubmajor(this)">Remove Submajor</button>
+  </div>
+</template>
+    <div class="container">
+       <% majors.forEach(function(major) { %>
+    <a href="/majors/<%= major.slug %>" class="major-box <%= major.name %>">
+        <img src="/uploads/pics/<%= major.img %>" alt="<%= major.name %>" class="major-image">
+        <span><%= major.name %></span>
+    </a>
+     
+    <% }) %>
+    </div>
+    <a href="/chatbot" class="chatbot-btn">
+    <span>💬</span> Chatbot
+</a>
+<script>
+  let submajorCount = 0;
+
+function addSubmajor() {
+  const container = document.getElementById('submajorsContainer');
+  const template = document.getElementById('submajorTemplate');
+  const clone = template.content.cloneNode(true);
+  const index = submajorCount++;
+
+  const block = clone.querySelector('.submajor-block');
+  block.querySelector('.submajor-index').textContent = index + 1;
+
+  const fields = block.querySelectorAll('input, textarea');
+ const fieldNames = ['name', 'slug', 'img', 'description', 'overview', 'responsibilities', 'careerPaths'];
+
+fields.forEach((field, i) => {
+  const fieldName = field.type === 'file'
+    ? `submajors[${index}][img]`
+    : `submajors[${index}][${fieldNames[i]}]`;
+
+  console.log("Setting field:", fieldName);
+  field.setAttribute('name', fieldName);
+});
+
+
+
+  container.appendChild(clone);
+}
+
+function removeSubmajor(button) {
+  const block = button.closest('.submajor-block');
+  block.remove();
+}
+
+</script>
+</body>
+</html>
