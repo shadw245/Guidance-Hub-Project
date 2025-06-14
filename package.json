@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "ejs": "^3.1.10",
+    "expess": "^0.0.1-security",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
+    "redis": "^5.5.6"
+  },
+  "name": "guidancehub",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "setup": "node setup-database.js",
+    "dev": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
